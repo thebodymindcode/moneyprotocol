@@ -2,740 +2,1328 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Кто решает, сколько у вас денег?</title>
-<meta name="description" content="Внутри вас есть тот, кто однажды назначил вашему доходу потолок. Нейробиология денег — рассекречено.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Протокол денег: 17 дней перенастройки денежной программы</title>
+<meta name="description" content="17 дней работы с денежной программой на четырёх уровнях: тело, биохимия, подсознание, образ себя. Старт 17 июня. Закрытый Telegram-канал.">
+<meta property="og:title" content="Протокол денег: 17 дней перенастройки денежной программы">
+<meta property="og:description" content="17 дней работы с денежной программой на четырёх уровнях: тело, биохимия, подсознание, образ себя. Старт 17 июня.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thebodymindcode.github.io/moneyaccess/">
+<meta property="og:locale" content="ru_RU">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Special+Elite&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#BEC0B1;--page:#F7F6F1;--ink:#19211C;--body:#34403A;--muted:#5A6358;--dim:#7C8273;
-  --line:#D4D2C4;--warm:#EDEBE0;--warm2:#E4E2D4;
-  --accent:#1C5C44;--accent-d:#0F3A2B;--accent-l:#2F9268;--gold:#A87E36;
-  --red:rgba(168,48,36,.7);--red-soft:rgba(168,48,36,.3);
-  --f-display:'Fraunces',Georgia,serif;--f-body:'Source Serif 4',Georgia,serif;--f-mono:'IBM Plex Mono',monospace;--f-stamp:'Special Elite',monospace;
+  --bg:#F4F3EE;
+  --bg-soft:#ECEAE1;
+  --paper:#FBFAF6;
+  --deep:#0E2018;
+  --deep2:#142A20;
+  --ink:#1A241E;
+  --body-c:#39443D;
+  --muted:#5F6A60;
+  --faint:#8B948A;
+  --line:#DCDAD0;
+  --line-dark:rgba(207,227,214,.14);
+  --green:#1C5C44;
+  --green-d:#0F3A2B;
+  --green-l:#2F9268;
+  --mint:#8FE6BB;
+  --mint-dim:#74D6A8;
+  --mint-soft:#CFE3D6;
+  --gold:#A87E36;
+  --red:#A83024;
+  --f-display:'Fraunces',Georgia,serif;
+  --f-body:'Source Serif 4',Georgia,serif;
+  --f-mono:'IBM Plex Mono',monospace;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{overflow-x:hidden;-webkit-text-size-adjust:100%}
-body{font-family:var(--f-body);background:var(--bg);color:var(--body);font-size:17px;line-height:1.74;overflow-x:hidden;word-wrap:break-word;overflow-wrap:break-word;text-wrap:pretty}
+html{scroll-behavior:smooth;overflow-x:hidden;-webkit-text-size-adjust:100%}
+body{font-family:var(--f-body);background:var(--bg);color:var(--body-c);font-size:17px;line-height:1.74;overflow-x:hidden;word-wrap:break-word;overflow-wrap:break-word;text-wrap:pretty}
 img,svg,video{max-width:100%;height:auto;display:block}
-body::before{content:'';position:fixed;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.04;pointer-events:none;z-index:10000}
+body::after{content:'';position:fixed;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.035;pointer-events:none;z-index:10000}
 
-.page{max-width:740px;margin:0 auto;background:var(--page);border:1px solid #CFCDBF;box-shadow:0 4px 60px rgba(20,30,20,.13);position:relative;z-index:1;overflow:hidden}
-.page::before{content:'';position:absolute;top:0;bottom:0;left:0;width:5px;background:linear-gradient(180deg,var(--accent-d),var(--accent-l),var(--accent-d));z-index:10}
+/* ============ LAYOUT ============ */
+.sec{padding:96px 28px;position:relative}
+.sec.tight{padding:64px 28px}
+.wrap{max-width:1020px;margin:0 auto}
+.wrap-m{max-width:880px;margin:0 auto}
+.wrap-n{max-width:740px;margin:0 auto}
+.bg-soft{background:var(--bg-soft)}
+.bg-paper{background:var(--paper)}
+.bg-deep{background:linear-gradient(170deg,var(--deep),var(--deep2) 60%,var(--deep));color:var(--mint-soft)}
+.bg-deep::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--mint),transparent);opacity:.5}
+.band{background:linear-gradient(170deg,#060D09,#0B1510 55%,#060D09);border-top:1px solid rgba(143,230,187,.38);border-bottom:1px solid rgba(143,230,187,.38)}
+.band::before{display:none}
+.band::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 56% 90% at 50% 50%,rgba(143,230,187,.08),transparent 70%);pointer-events:none}
 
-.class-bar{padding:12px 44px 12px 50px;background:var(--warm2);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);flex-wrap:wrap}
-.class-bar .level{color:var(--red);font-weight:700;border:1.5px solid var(--red-soft);padding:3px 11px}
-.class-bar .open{color:var(--accent);font-weight:600}
+/* ============ TYPO ============ */
+.tag-line{display:flex;align-items:center;justify-content:center;gap:16px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--green);margin-bottom:26px;text-align:center;flex-wrap:wrap}
+.tag-line .tl{width:42px;height:1px;background:linear-gradient(90deg,transparent,var(--green));opacity:.5;flex:none}
+.tag-line .tl:last-child{background:linear-gradient(90deg,var(--green),transparent)}
+.bg-deep .tag-line{color:var(--mint)}
+.bg-deep .tag-line .tl{background:linear-gradient(90deg,transparent,var(--mint))}
+.bg-deep .tag-line .tl:last-child{background:linear-gradient(90deg,var(--mint),transparent)}
+h2.sec-h{font-family:var(--f-display);font-optical-sizing:auto;font-size:clamp(1.8rem,4.6vw,2.7rem);font-weight:600;line-height:1.12;letter-spacing:-.01em;color:var(--ink);text-align:center;margin-bottom:22px;text-wrap:balance}
+h2.sec-h em{font-style:italic;color:var(--green)}
+.bg-deep h2.sec-h{color:#F2F1E8}
+.bg-deep h2.sec-h em{color:var(--mint)}
+.sec-sub{font-size:1.08rem;color:var(--muted);text-align:center;max-width:640px;margin:0 auto 54px;line-height:1.65;text-wrap:balance}
+.bg-deep .sec-sub{color:#9FB0A3}
+.center{text-align:center}
 
-.header{background:linear-gradient(180deg,#EFEDE3,var(--page));padding:40px 44px 34px 50px;border-bottom:3px solid var(--ink);position:relative}
-.header-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:30px;flex-wrap:wrap}
-.header-id{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
-.header-stamp{font-family:var(--f-stamp);font-size:.92rem;letter-spacing:.08em;text-transform:uppercase;color:var(--red);border:2px solid var(--red-soft);padding:4px 16px;transform:rotate(-3deg)}
-.masthead{text-align:center}
-.masthead-label{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:22px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
-.masthead-label::before,.masthead-label::after{content:'';width:34px;height:1px;background:linear-gradient(90deg,transparent,var(--accent),transparent);opacity:.4}
-.masthead h1{font-family:var(--f-display);font-optical-sizing:auto;font-size:clamp(1.85rem,5.2vw,2.5rem);font-weight:600;line-height:1.08;letter-spacing:-.01em;text-transform:uppercase;color:var(--ink);margin-bottom:18px;text-wrap:balance}
-.masthead h1 em{font-style:italic;color:var(--accent)}
-.masthead-sub{font-family:var(--f-body);font-size:1.01rem;font-style:italic;color:var(--muted);font-weight:400;max-width:540px;margin:0 auto;line-height:1.6}
-.masthead-line{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:26px}
-.masthead-line::before,.masthead-line::after{content:'';width:50px;height:1px;background:linear-gradient(90deg,transparent,var(--line))}
-.masthead-dot{width:7px;height:7px;border-radius:50%;border:1.5px solid var(--accent)}
+/* ============ ANIMATIONS ============ */
+.fade-in{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+.fade-in.d1{transition-delay:.1s}.fade-in.d2{transition-delay:.2s}.fade-in.d3{transition-delay:.3s}.fade-in.d4{transition-delay:.4s}
+@keyframes pulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:1;transform:scale(1.25)}}
+@keyframes pulseSoft{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes flowdash{to{stroke-dashoffset:-26}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes breathe{0%,100%{transform:scale(.97);opacity:.5}50%{transform:scale(1.04);opacity:.9}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .fade-in{opacity:1;transform:none}
+}
 
-.content{padding:40px 44px 60px 50px}
-h2{font-family:var(--f-display);font-optical-sizing:auto;font-size:clamp(1.35rem,3.4vw,1.7rem);font-weight:600;line-height:1.18;letter-spacing:.005em;text-transform:uppercase;margin:14px 0 22px;color:var(--ink);text-wrap:balance}
-.part-title{margin:46px 0 22px}
-p{margin-bottom:17px}
-strong{font-weight:600;color:var(--ink)}
-em{font-style:italic}
-.dropcap::first-letter{float:left;font-family:var(--f-display);font-weight:600;font-size:3.3rem;line-height:.8;padding:8px 14px 0 0;color:var(--accent)}
-.lead-line{font-family:var(--f-display);font-size:1.16rem;font-weight:500;font-style:italic;color:var(--ink);line-height:1.4;margin:0 0 22px}
+/* ============ NAV ============ */
+nav{position:fixed;top:0;left:0;right:0;z-index:9000;display:flex;justify-content:space-between;align-items:center;padding:16px 30px;transition:all .4s ease;background:transparent}
+nav.scrolled{background:rgba(244,243,238,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line);padding:11px 30px}
+.nav-logo{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+.nav-logo i{color:var(--green);font-style:normal}
+.nav-cta{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#F2F1E8;background:var(--green);padding:9px 22px;text-decoration:none;white-space:nowrap;transition:background .3s;font-weight:500}
+.nav-cta:hover{background:var(--green-d)}
 
-.photo-block{margin:36px 0;position:relative;overflow:hidden;border:1px solid var(--line)}
-.photo-block img{width:100%;display:block}
-.photo-block.bw img{filter:grayscale(100%) contrast(1.06)}
-.photo-block.color img{filter:none}
-.photo-caption{background:var(--warm2);padding:11px 18px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:12px;text-transform:uppercase;flex-wrap:wrap}
-.photo-caption .tag{color:var(--red);font-weight:600;font-size:.64rem;border:1px solid var(--red-soft);padding:2px 9px;white-space:nowrap}
+/* ============ CTA ============ */
+.cta-btn{display:inline-block;padding:18px 52px;background:var(--green);color:#F2F1E8;font-family:var(--f-mono);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;position:relative;overflow:hidden;transition:all .4s ease;white-space:nowrap;border:none;cursor:pointer}
+.cta-btn::before{content:'';position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);transition:left .6s ease}
+.cta-btn:hover::before{left:100%}
+.cta-btn:hover{background:var(--green-d);box-shadow:0 8px 28px rgba(15,58,43,.3);transform:translateY(-2px)}
+.cta-btn.mint{background:var(--mint);color:var(--deep)}
+.cta-btn.mint:hover{background:var(--mint-dim);box-shadow:0 8px 28px rgba(143,230,187,.2)}
+.cta-note{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);margin-top:16px}
+.bg-deep .cta-note{color:#7E8F82}
 
-.part-header{background:linear-gradient(135deg,#E9E7DB,#E1DFD1);padding:16px 26px;margin:56px 0 0;font-family:var(--f-mono);font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:10px;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);flex-wrap:wrap}
-.part-header .classified{font-size:.66rem;color:var(--red);font-weight:700;letter-spacing:.1em;border:1.5px solid var(--red-soft);padding:3px 11px;white-space:nowrap}
+/* ============ HERO ============ */
+.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:152px 28px 88px;position:relative;background:radial-gradient(ellipse 90% 60% at 50% -10%,#E7EFE6,var(--bg) 65%)}
+.hero-h1{font-family:var(--f-display);font-optical-sizing:auto;font-size:clamp(2.7rem,9vw,5.2rem);font-weight:600;line-height:1.02;letter-spacing:-.015em;color:var(--ink);margin-bottom:26px;text-wrap:balance}
+.hero-h1 em{font-style:italic;color:var(--green)}
+.hero-sub{font-size:clamp(1.05rem,2.6vw,1.32rem);font-style:italic;color:var(--muted);max-width:620px;margin:0 auto 44px;line-height:1.55;text-wrap:balance}
+.hero-graphic{width:100%;max-width:780px;margin:0 auto 44px}
+.hero-lead{font-size:1rem;color:var(--body-c);max-width:660px;margin:-14px auto 42px;line-height:1.75}
+.mf-mark{text-align:center;color:var(--green-l);font-size:.85rem;margin-bottom:24px;letter-spacing:.3em}
+.mf-p{font-size:1.12rem;line-height:1.8;text-align:center;max-width:620px;margin:0 auto;color:var(--body-c)}
+.mf-em{font-family:var(--f-display);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.42rem);line-height:1.55;text-align:center;max-width:640px;margin:24px auto 0;color:var(--ink);text-wrap:balance}
+.hero-meta{display:flex;justify-content:center;align-items:center;gap:10px 26px;flex-wrap:wrap;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:38px}
+.hero-meta span{display:flex;align-items:center;gap:8px}
+.hero-meta i{width:5px;height:5px;background:var(--green-l);border-radius:50%;flex:none;animation:pulseSoft 2.6s ease-in-out infinite}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-family:var(--f-mono);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);display:flex;flex-direction:column;align-items:center;gap:8px}
+.scroll-hint::after{content:'';width:1px;height:34px;background:linear-gradient(180deg,var(--green),transparent);animation:pulseSoft 2s ease-in-out infinite}
+.svg-flow{stroke-dasharray:5 8;animation:flowdash 1.6s linear infinite}
+.svg-pulse{animation:pulse 2.8s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
+.svg-pulse.p2{animation-delay:.6s}.svg-pulse.p3{animation-delay:1.2s}.svg-pulse.p4{animation-delay:1.8s}
+.svg-float{animation:floaty 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+.svg-blink{animation:blink 1.4s steps(2) infinite}
 
-.pullquote{margin:40px 0;padding:30px 32px;background:var(--warm);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);text-align:center;font-family:var(--f-display);font-size:clamp(1.15rem,3vw,1.4rem);font-weight:500;font-style:italic;color:var(--ink);line-height:1.4}
-.pullquote cite{display:block;font-size:.72rem;font-family:var(--f-mono);font-style:normal;color:var(--dim);margin-top:14px;letter-spacing:.06em;text-transform:uppercase}
+/* ============ STAT STRIP ============ */
+.stat-strip{background:var(--deep);color:var(--mint-soft);padding:0}
+.stat-grid{max-width:1020px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+.stat-cell{padding:46px 20px 42px;text-align:center;border-right:1px solid var(--line-dark);position:relative}
+.stat-cell:last-child{border-right:none}
+.stat-num{font-family:var(--f-display);font-size:clamp(2.2rem,5vw,3.1rem);font-weight:700;color:var(--mint);line-height:1;margin-bottom:10px}
+.stat-num sup{font-size:.45em;font-weight:400}
+.stat-label{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#7E8F82;line-height:1.7}
 
-.stat-row{display:flex;gap:20px;margin:44px 0;padding:30px 0;border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);flex-wrap:wrap;justify-content:space-around;text-align:center}
-.stat{flex:1;min-width:150px}
-.stat-num{font-family:var(--f-display);font-optical-sizing:auto;font-size:clamp(2.1rem,6.4vw,2.8rem);font-weight:700;color:var(--accent-d);line-height:1;letter-spacing:-.02em}
-.stat-label{font-family:var(--f-mono);font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-top:14px;line-height:1.5}
+/* ============ RECAP CARDS ============ */
+.recap-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.recap-card{background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--green);padding:30px 28px 26px;transition:transform .35s ease,box-shadow .35s ease}
+.recap-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(20,40,30,.09)}
+.recap-card .rc-num{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.14em;color:var(--green);font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.recap-card .rc-num::after{content:'';flex:1;height:1px;background:var(--line)}
+.recap-card h3{font-family:var(--f-display);font-size:1.22rem;font-weight:600;color:var(--ink);margin-bottom:10px;line-height:1.3;text-wrap:balance}
+.recap-card p{font-size:.94rem;line-height:1.66;margin:0}
+.recap-card p strong{color:var(--ink)}
+.recap-foot{text-align:center;margin-top:38px;font-size:1.02rem;color:var(--muted)}
+.recap-foot a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
 
-.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:40px 0}
-.info-grid.four{grid-template-columns:repeat(4,1fr)}
-.info-cell{padding:24px 14px;text-align:center;background:var(--warm);border:1px solid var(--line);border-bottom:3px solid var(--accent)}
-.info-cell svg{width:34px;height:34px;margin:0 auto 12px;display:block;stroke:var(--accent);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.info-cell-label{font-family:var(--f-mono);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--ink);margin-bottom:7px;font-weight:600}
-.info-cell-val{font-family:var(--f-body);font-size:.95rem;color:var(--muted);line-height:1.45;font-style:italic}
+/* ============ RECOGNITION ============ */
+.recog-list{max-width:760px;margin:0 auto}
+.recog-item{display:flex;gap:22px;padding:24px 6px;border-bottom:1px solid var(--line);align-items:baseline}
+.recog-item:first-child{border-top:2px solid var(--ink)}
+.recog-num{font-family:var(--f-mono);font-size:.7rem;color:var(--faint);flex:none;width:30px;font-weight:500}
+.recog-text{font-size:1.02rem;line-height:1.65}
+.recog-text strong{color:var(--ink)}
+.recog-after{text-align:center;margin-top:44px;font-family:var(--f-display);font-style:italic;font-size:1.25rem;color:var(--ink);text-wrap:balance}
 
-.role-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin:36px 0}
-.role-card{background:var(--warm);border:1px solid var(--line);border-left:3px solid var(--accent);padding:24px 24px}
-.role-card .rc-tag{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:10px}
-.role-card .rc-title{font-family:var(--f-display);font-size:1.2rem;font-style:italic;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.25}
-.role-card .rc-desc{font-size:.98rem;color:var(--muted);line-height:1.55}
 
-.floors{margin:40px 0;border:1px solid var(--line)}
-.floor{padding:28px 28px}
-.floor-top{background:var(--warm);border-bottom:1px dashed var(--line)}
-.floor-bottom{background:linear-gradient(135deg,#103A2B,#0C2E22);color:#CFE3D6}
-.floor-tag{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
-.floor-top .floor-tag{color:var(--dim)}
-.floor-bottom .floor-tag{color:rgba(116,214,168,.8)}
-.floor-title{font-family:var(--f-display);font-size:1.3rem;font-style:italic;font-weight:500;margin-bottom:10px}
-.floor-top .floor-title{color:var(--ink)}
-.floor-bottom .floor-title{color:#fff}
-.floor-items{font-family:var(--f-mono);font-size:.78rem;letter-spacing:.03em;text-transform:uppercase;line-height:2}
-.floor-top .floor-items{color:var(--muted)}
-.floor-bottom .floor-items{color:rgba(207,227,214,.9)}
-.floor-note{font-size:.95rem;font-style:italic;margin-top:12px}
-.floor-top .floor-note{color:var(--dim)}
-.floor-bottom .floor-note{color:rgba(207,227,214,.65)}
+.recog-grade{max-width:680px;margin:44px auto 0;border:1px solid var(--line);background:var(--paper)}
+.rg-row{display:flex;gap:18px;align-items:baseline;padding:16px 24px;border-bottom:1px solid var(--line);font-size:.96rem;line-height:1.6}
+.rg-row:last-child{border-bottom:none}
+.rg-num{font-family:'Fraunces',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--green);flex:none;width:44px;text-align:right}
+.rg-row:last-child .rg-num{color:var(--red)}
+.rg-row:last-child span:last-child{font-style:italic;color:var(--ink)}
 
-.data-panel{background:linear-gradient(135deg,#103A2B,#0C2C20);color:#CFE3D6;padding:36px 34px;margin:44px 0;position:relative;overflow:hidden}
-.data-panel::after{content:'';position:absolute;top:0;right:0;bottom:0;width:4px;background:linear-gradient(180deg,#74D6A8,#2F9268,#74D6A8)}
-.data-panel .label{font-family:var(--f-mono);font-size:.74rem;text-transform:uppercase;letter-spacing:.16em;color:rgba(116,214,168,.65);margin-bottom:16px}
-.data-panel p{color:#CFE3D6;margin-bottom:14px;position:relative;z-index:1;font-size:1.02rem}
-.data-panel p:last-child{margin-bottom:0}
-.data-panel strong{color:#8FE6BB}
+/* ============ FLOORS FOOT ============ */
+.floors-foot{max-width:740px;margin:40px auto 0;text-align:left;font-size:1.02rem;line-height:1.75}
+.floors-foot p+p{margin-top:14px}
+.floors-foot strong{color:var(--ink)}
 
-.sidebar{background:rgba(168,48,36,.04);border:1px solid rgba(168,48,36,.12);border-left:3px solid var(--red-soft);padding:26px 28px;margin:40px 0}
-.sidebar-title{font-family:var(--f-stamp);font-size:.95rem;text-transform:uppercase;letter-spacing:.1em;color:var(--red);margin-bottom:12px}
-.sidebar p{margin-bottom:0;font-size:1.02rem}
+/* ============ COMPARE WORDS/STATE ============ */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:880px;margin:0 auto}
+.duo-col{padding:34px 30px 30px;border:1px solid var(--line);background:var(--paper)}
+.duo-col.bad{border-top:3px solid #C9C5B8}
+.duo-col.good{border-top:3px solid var(--green);background:linear-gradient(180deg,#F2F6F1,var(--paper) 55%)}
+.duo-col .duo-tag{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
+.duo-col.bad .duo-tag{color:var(--faint)}
+.duo-col.good .duo-tag{color:var(--green)}
+.duo-col h3{font-family:var(--f-display);font-size:1.3rem;font-weight:600;color:var(--ink);margin-bottom:12px;line-height:1.3}
+.duo-col p{font-size:.94rem;line-height:1.68;margin-bottom:12px}
+.duo-col ul{list-style:none;margin-top:6px}
+.duo-col li{font-size:.92rem;line-height:1.55;padding:8px 0 8px 22px;position:relative;border-bottom:1px solid var(--line)}
+.duo-col li:last-child{border-bottom:none}
+.duo-col.bad li::before{content:'×';position:absolute;left:2px;color:#B3AE9F}
+.duo-col.good li::before{content:'→';position:absolute;left:0;color:var(--green)}
 
-.sep{display:flex;align-items:center;gap:14px;margin:52px 0}
-.sep::before,.sep::after{content:'';flex:1;height:1px;background:var(--line)}
-.sep-icon{width:9px;height:9px;border:1.5px solid var(--accent);border-radius:50%;position:relative}
-.sep-icon::after{content:'';position:absolute;inset:2px;background:var(--accent);border-radius:50%}
+/* ============ MEANINGS ============ */
+.mean-wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:720px;margin:0 auto 40px}
+.mean{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);background:var(--paper);padding:11px 20px;transition:all .3s ease}
+.mean:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px)}
+.mean.hot{color:#F2F1E8;background:var(--green);border-color:var(--green);font-weight:600}
 
-.ref{font-family:var(--f-mono);font-size:.74rem;color:var(--dim);margin-top:-8px;margin-bottom:20px;letter-spacing:.02em}
+/* ============ DARK QUOTE ============ */
+.dquote{font-family:var(--f-display);font-size:clamp(1.5rem,4vw,2.3rem);font-style:italic;font-weight:500;line-height:1.35;color:#F2F1E8;text-align:center;max-width:820px;margin:0 auto;text-wrap:balance}
+.dquote strong{color:var(--mint);font-style:normal;font-weight:600}
+.dquote-sub{text-align:center;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:#7E8F82;margin-top:28px}
 
-.checklist{margin:36px 0;padding:32px 32px;background:var(--warm);border:1px solid var(--line)}
-.checklist-title{font-family:var(--f-mono);font-size:.82rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);margin-bottom:8px;font-weight:600}
-.checklist-intro{font-size:1rem;color:var(--muted);margin-bottom:22px;font-style:italic}
-.checklist label{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;cursor:pointer;font-size:1.02rem;line-height:1.55}
-.checklist input[type="checkbox"]{margin-top:5px;accent-color:var(--accent);flex-shrink:0;width:22px;height:22px;cursor:pointer}
-.checklist-result{display:none;margin-top:16px;padding:20px 22px;background:#fff;border-left:3px solid var(--accent);font-size:1rem}
-.checklist-result.show{display:block}
-.checklist-result strong{color:var(--accent-d)}
+/* ============ CODE LOCK (4 LEVELS) ============ */
+.lock-seq{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:980px;margin:0 auto;position:relative}
+.lock-step{padding:34px 22px 30px;border:1px solid var(--line-dark);background:rgba(143,230,187,.03);position:relative;text-align:center}
+.lock-step + .lock-step{border-left:none}
+.lock-step .ls-num{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.16em;color:var(--mint);font-weight:600;margin-bottom:16px}
+.lock-step .ls-dial{width:54px;height:54px;border:1.5px solid var(--mint);border-radius:50%;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-family:var(--f-display);font-size:1.3rem;font-weight:700;color:var(--mint);position:relative}
+.lock-step .ls-dial::after{content:'';position:absolute;inset:-7px;border:1px dashed rgba(143,230,187,.3);border-radius:50%;animation:breathe 4s ease-in-out infinite}
+.lock-step:nth-child(2) .ls-dial::after{animation-delay:1s}
+.lock-step:nth-child(3) .ls-dial::after{animation-delay:2s}
+.lock-step:nth-child(4) .ls-dial::after{animation-delay:3s}
+.lock-step h3{font-family:var(--f-display);font-size:1.12rem;font-weight:600;color:#F2F1E8;margin-bottom:8px}
+.lock-step p{font-size:.85rem;line-height:1.6;color:#9FB0A3;margin:0}
+.lock-foot{max-width:740px;margin:42px auto 0;text-align:left;font-size:1rem;line-height:1.75;color:var(--mint-soft)}
+.lock-foot strong{color:var(--mint)}
 
-.product-block{margin:48px 0;background:linear-gradient(135deg,#0F3A2B,#0B2A1F);color:#CFE3D6;padding:44px 38px;position:relative;overflow:hidden}
-.product-block::before{content:'';position:absolute;inset:0;opacity:.04;background:url("data:image/svg+xml,%3Csvg width='300' height='300' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='150' cy='150' r='80' fill='none' stroke='%23fff' stroke-width='.3'/%3E%3Ccircle cx='150' cy='150' r='50' fill='none' stroke='%23fff' stroke-width='.25'/%3E%3Ccircle cx='150' cy='150' r='20' fill='none' stroke='%23fff' stroke-width='.25'/%3E%3C/svg%3E")}
-.product-block .product-eyebrow{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(116,214,168,.65);margin-bottom:14px;position:relative;z-index:1}
-.product-block h2{color:#fff;font-size:clamp(1.5rem,4.2vw,1.95rem);margin:0 0 8px;position:relative;z-index:1}
-.product-block .product-sub{font-family:var(--f-mono);font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(116,214,168,.7);margin-bottom:26px;position:relative;z-index:1}
-.product-block p{color:#CFE3D6;position:relative;z-index:1;margin-bottom:16px;font-size:1.04rem}
-.product-block p strong{color:#8FE6BB}
-.product-note{font-size:.98rem;color:rgba(207,227,214,.7);line-height:1.7;position:relative;z-index:1}
-.product-emph{text-align:center;font-size:1.05rem;margin:22px 0 6px;position:relative;z-index:1}
-.product-emph strong{color:#CFE3D6}
+/* ============ FUEL (CORTISOL/DOPAMINE) ============ */
+.fuel{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:880px;margin:0 auto}
+.fuel-col{border:1px solid var(--line);background:var(--paper);padding:32px 30px 28px;position:relative;overflow:hidden}
+.fuel-col.cort{border-top:3px solid var(--red)}
+.fuel-col.dopa{border-top:3px solid var(--green)}
+.fuel-tag{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.fuel-col.cort .fuel-tag{color:var(--red)}
+.fuel-col.dopa .fuel-tag{color:var(--green)}
+.fuel-col h3{font-family:var(--f-display);font-size:1.34rem;font-weight:600;color:var(--ink);margin-bottom:16px}
+.fuel-col p{font-size:.94rem;line-height:1.68;margin-bottom:0}
+.fuel-wave{height:46px;margin:18px 0 6px}
 
-.cta-wrap{text-align:center;margin:40px 0}
-.cta-btn{display:inline-block;padding:22px 60px;background:linear-gradient(135deg,#2F9268,#1C5C44);color:#fff;text-decoration:none;font-family:var(--f-body);font-size:1.2rem;font-weight:600;letter-spacing:.02em;border:none;cursor:pointer;transition:all .3s;position:relative;z-index:1;border-radius:2px;box-shadow:0 4px 20px rgba(28,92,68,.28)}
-.cta-btn:hover{background:linear-gradient(135deg,#36A878,#23704F);transform:translateY(-2px);box-shadow:0 8px 36px rgba(28,92,68,.42)}
-.cta-btn:active{transform:translateY(0)}
-.cta-btn-large{padding:26px 64px;font-size:1.3rem;letter-spacing:.03em;animation:ctaPulse 2.6s ease-in-out infinite}
-@keyframes ctaPulse{0%,100%{box-shadow:0 6px 28px rgba(28,92,68,.3)}50%{box-shadow:0 8px 46px rgba(47,146,104,.55)}}
-.cta-btn-sub{display:block;margin-top:14px;font-family:var(--f-mono);font-size:.74rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase}
+/* ============ PROGRAM TIMELINE ============ */
+.tl-bar{display:grid;grid-template-columns:3fr 3fr 4fr 4fr 3fr;gap:4px;max-width:980px;margin:0 auto 14px}
+.tl-seg{height:10px;background:var(--mint-soft);position:relative;overflow:hidden}
+.tl-seg i{position:absolute;inset:0;background:var(--green);transform:scaleX(0);transform-origin:left;transition:transform 1.1s cubic-bezier(.6,.05,.3,1)}
+.tl-bar.visible .tl-seg:nth-child(1) i{transform:scaleX(1);transition-delay:.1s}
+.tl-bar.visible .tl-seg:nth-child(2) i{transform:scaleX(1);transition-delay:.5s}
+.tl-bar.visible .tl-seg:nth-child(3) i{transform:scaleX(1);transition-delay:.9s}
+.tl-bar.visible .tl-seg:nth-child(4) i{transform:scaleX(1);transition-delay:1.3s}
+.tl-bar.visible .tl-seg:nth-child(5) i{transform:scaleX(1);transition-delay:1.7s}
+.tl-days{display:grid;grid-template-columns:3fr 3fr 4fr 4fr 3fr;gap:4px;max-width:980px;margin:0 auto 56px;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);text-align:center}
+.phase-card{max-width:880px;margin:0 auto 20px;border:1px solid var(--line);background:var(--paper);display:grid;grid-template-columns:200px 1fr;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.phase-card:hover{transform:translateY(-3px);box-shadow:0 16px 38px rgba(20,40,30,.1);border-color:var(--green)}
+.phase-side{background:var(--bg-soft);border-right:1px solid var(--line);padding:26px 22px;display:flex;flex-direction:column;gap:8px;justify-content:center}
+.phase-side .ph-num{font-family:var(--f-display);font-size:2.1rem;font-weight:700;color:var(--green);line-height:1}
+.phase-side .ph-days{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.phase-side .ph-level{font-family:var(--f-mono);font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green-l);font-weight:600}
+.phase-main{padding:28px 30px 26px}
+.phase-main h3{font-family:var(--f-display);font-size:1.4rem;font-weight:600;color:var(--ink);margin-bottom:10px;line-height:1.25;text-wrap:balance}
+.phase-main p{font-size:.95rem;line-height:1.7;margin:0}
+.phase-main p strong{color:var(--ink)}
+.prog-note{max-width:680px;margin:40px auto 0;text-align:center;font-size:.95rem;color:var(--muted);font-style:italic}
 
-.final-line{margin:52px 0 28px;padding:34px 32px;background:var(--warm);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);font-family:var(--f-body);font-size:1.05rem;color:var(--muted);line-height:1.8;text-align:center}
-.final-line p{margin:0}
-.final-line p strong{color:var(--ink)}
+/* ============ DAY STEPS ============ */
+.day-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:1000px;margin:0 auto}
+.dstep{background:var(--paper);border:1px solid var(--line);padding:30px 24px 26px;position:relative}
+.dstep::before{content:attr(data-step);position:absolute;top:-13px;left:22px;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;background:var(--green);color:#F2F1E8;padding:5px 12px;font-weight:600}
+.dstep .ds-time{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--green);margin-bottom:12px;font-weight:600}
+.dstep h3{font-family:var(--f-display);font-size:1.12rem;font-weight:600;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.dstep p{font-size:.88rem;line-height:1.62;margin:0}
+.day-total{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:46px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);flex-wrap:wrap}
+.day-total b{font-family:var(--f-display);font-size:1.7rem;color:var(--green);letter-spacing:0}
 
-.footer{padding:30px 50px;border-top:1px solid var(--line);font-family:var(--f-mono);font-size:.74rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;text-align:center;line-height:1.7}
+/* ============ INCLUDES ============ */
+.inc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:780px;margin:0 auto}
+.inc-card{background:rgba(143,230,187,.04);border:1px solid var(--line-dark);padding:30px 26px 26px;transition:background .3s,border-color .3s}
+.inc-card:hover{background:rgba(143,230,187,.08);border-color:rgba(143,230,187,.35)}
+.inc-card .ic-mark{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;color:var(--mint);font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.inc-card .ic-mark::after{content:'';flex:1;height:1px;background:var(--line-dark)}
+.inc-card h3{font-family:var(--f-display);font-size:1.16rem;font-weight:600;color:#F2F1E8;margin-bottom:8px;line-height:1.3}
+.inc-card p{font-size:.88rem;line-height:1.62;color:#9FB0A3;margin:0}
 
-@media(max-width:768px){
-  body{font-size:16px;line-height:1.72}
-  .page{border:none;box-shadow:none}
-  .page::before{width:4px}
-  .class-bar{padding:10px 18px 10px 22px;font-size:.66rem;justify-content:center;text-align:center}
-  .header{padding:30px 18px 26px 24px}
-  .header-id{font-size:.68rem}
-  .header-stamp{font-size:.82rem;padding:3px 12px}
-  .masthead-label{font-size:.7rem;letter-spacing:.16em;gap:10px}
-  .masthead-label::before,.masthead-label::after{width:24px}
-  .masthead h1{font-size:clamp(1.5rem,6vw,1.95rem)}
-  .masthead-sub{font-size:1rem}
-  .content{padding:30px 18px 44px 24px}
-  h2{font-size:clamp(1.25rem,5vw,1.55rem)}
-  p{margin-bottom:18px}
-  .lead-line{font-size:1.08rem}
-  .dropcap::first-letter{font-size:3.3rem;padding:6px 11px 0 0}
-  .photo-block{margin:28px 0}
-  .photo-caption{padding:9px 13px;font-size:.64rem}
-  .photo-caption .tag{font-size:.56rem}
-  .part-header{padding:13px 16px;font-size:.72rem;margin:44px 0 0}
-  .part-header .classified{font-size:.58rem}
-  .part-title{margin:34px 0 18px}
-  .pullquote{padding:24px 18px;margin:34px 0}
-  .stat-row{gap:16px;margin:36px 0;padding:26px 0}
-  .stat{min-width:120px}
-  .info-grid{grid-template-columns:repeat(2,1fr);gap:10px;margin:32px 0}
-  .info-grid.four{grid-template-columns:repeat(2,1fr)}
-  .info-cell{padding:18px 10px}
-  .info-cell svg{width:30px;height:30px}
-  .role-grid{grid-template-columns:1fr;gap:12px;margin:30px 0}
-  .role-card{padding:20px 20px}
-  .floor{padding:22px 20px}
-  .data-panel{padding:28px 20px;margin:36px 0}
-  .data-panel p{font-size:1rem}
-  .sidebar{padding:22px 20px;margin:34px 0}
-  .sep{margin:40px 0}
-  .checklist{padding:24px 18px}
-  .checklist input[type="checkbox"]{width:24px;height:24px}
-  .product-block{padding:32px 20px;margin:38px 0}
-  .product-block h2{font-size:clamp(1.6rem,7vw,2.1rem)}
-  .cta-btn{padding:19px 32px;font-size:1.1rem;width:100%;max-width:380px}
-  .cta-btn-large{padding:22px 32px;font-size:1.18rem}
-  .final-line{padding:26px 18px}
-  .footer{padding:24px 18px}
+/* ============ BEFORE / AFTER ============ */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:920px;margin:0 auto}
+.ba-col{border:1px solid var(--line);background:var(--paper);padding:34px 30px 28px}
+.ba-col.now{border-top:3px solid #C9C5B8}
+.ba-col.after{border-top:3px solid var(--green);background:linear-gradient(180deg,#F1F6F1,var(--paper) 50%)}
+.ba-tag{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;margin-bottom:20px}
+.ba-col.now .ba-tag{color:var(--faint)}
+.ba-col.after .ba-tag{color:var(--green)}
+.ba-col ul{list-style:none}
+.ba-col li{font-size:.95rem;line-height:1.6;padding:11px 0 11px 26px;border-bottom:1px solid var(--line);position:relative}
+.ba-col li:last-child{border-bottom:none}
+.ba-col.now li::before{content:'·';position:absolute;left:2px;color:#B3AE9F}
+.ba-col.after li::before{content:'✦';position:absolute;left:0;color:var(--green);font-size:.75rem;top:15px}
+.ba-col.after li strong{color:var(--ink)}
+
+/* ============ COST OF INACTION ============ */
+.cost-line{max-width:760px;margin:0 auto;text-align:center}
+.cost-line p{font-size:1.1rem;line-height:1.8;color:var(--mint-soft);margin-bottom:22px}
+.cost-line p strong{color:#F2F1E8}
+.ceil-anim{max-width:340px;margin:28px auto 2px}
+.cost-line .cl-em{font-family:var(--f-display);font-style:italic;font-size:1.4rem;color:var(--mint);line-height:1.5;margin-top:34px;text-wrap:balance}
+.cost-line .cl-em strong{color:#F2F1E8;font-weight:600}
+
+/* ============ FIT ============ */
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:920px;margin:0 auto}
+.fit-col{border:1px solid var(--line);padding:32px 30px 26px;background:var(--paper)}
+.fit-col.yes{border-top:3px solid var(--green)}
+.fit-col.no{border-top:3px solid rgba(168,48,36,.4)}
+.fit-col .f-title{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:16px}
+.fit-col.yes .f-title{color:var(--green)}
+.fit-col.no .f-title{color:var(--red)}
+.fit-col ul{list-style:none}
+.fit-col li{font-size:.94rem;line-height:1.6;padding:11px 0 11px 24px;border-bottom:1px solid var(--line);position:relative}
+.fit-col li:last-child{border-bottom:none}
+.fit-col.yes li::before{content:'→';position:absolute;left:0;color:var(--green)}
+.fit-col.no li::before{content:'×';position:absolute;left:2px;color:var(--red)}
+
+/* ============ AUTHOR ============ */
+.author-card{max-width:880px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr;gap:0;border:1px solid var(--line);background:var(--paper)}
+.author-photo{background:linear-gradient(160deg,var(--bg-soft),#DDE5DC);min-height:340px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.author-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.author-photo .ap-ph{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);text-align:center;padding:20px}
+.author-body{padding:40px 38px 36px}
+.author-body .a-name{font-family:var(--f-display);font-size:1.7rem;font-weight:600;color:var(--ink);margin-bottom:6px}
+.author-body .a-role{font-family:var(--f-mono);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green);margin-bottom:22px}
+.author-body p{font-size:.96rem;line-height:1.72;margin-bottom:16px}
+.author-stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:24px;padding-top:22px;border-top:1px solid var(--line)}
+.a-stat .as-num{font-family:var(--f-display);font-size:1.7rem;font-weight:700;color:var(--green)}
+.a-stat .as-label{font-family:var(--f-mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+
+/* ============ TARIFFS ============ */
+.start-strip{display:flex;align-items:center;justify-content:center;gap:16px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mint-soft);border:1px solid var(--line-dark);padding:14px 22px;margin:0 auto 44px;flex-wrap:wrap;max-width:640px;background:rgba(143,230,187,.04)}
+.start-strip b{color:var(--mint);font-weight:600;white-space:nowrap}
+.start-strip .ss-dot{width:6px;height:6px;border-radius:50%;background:var(--mint);animation:pulseSoft 2s ease-in-out infinite;flex:none}
+.tariffs{display:grid;grid-template-columns:1fr 1.08fr;gap:22px;max-width:920px;margin:0 auto}
+.tariff{border:1px solid var(--line-dark);background:rgba(251,250,246,.03);padding:38px 32px 32px;display:flex;flex-direction:column;position:relative}
+.tariff.featured{border:2px solid var(--mint);background:rgba(143,230,187,.06)}
+.t-badge{position:absolute;top:-13px;left:28px;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;background:var(--mint);color:var(--deep);font-weight:600;padding:5px 14px}
+.t-name{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:#9FB0A3;margin-bottom:10px}
+.tariff.featured .t-name{color:var(--mint)}
+.t-price{font-family:var(--f-display);font-size:2.7rem;font-weight:700;color:#F2F1E8;line-height:1;margin-bottom:6px}
+.t-price span{font-size:1.2rem;font-weight:400;color:#7E8F82}
+.t-sub{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#7E8F82;margin-bottom:26px}
+.tariff ul{list-style:none;flex:1;margin-bottom:30px}
+.tariff li{font-size:.92rem;line-height:1.55;padding:10px 0 10px 24px;position:relative;border-bottom:1px solid var(--line-dark);color:var(--mint-soft)}
+.tariff li:last-child{border-bottom:none}
+.tariff li::before{content:'✦';position:absolute;left:0;color:var(--green-l);font-size:.7rem;top:13px}
+.tariff li strong{color:#F2F1E8;font-weight:600}
+.tariff .cta-btn{width:100%;text-align:center}
+.tariff:not(.featured) .cta-btn{background:transparent;color:var(--mint-soft);border:1.5px solid rgba(207,227,214,.35)}
+.tariff:not(.featured) .cta-btn:hover{border-color:var(--mint);color:var(--mint);background:rgba(143,230,187,.05);box-shadow:none;transform:none}
+.other-paths{max-width:920px;margin:36px auto 0;padding-top:28px;border-top:1px solid var(--line-dark);font-size:.92rem;color:#9FB0A3;line-height:1.8;text-align:center}
+.other-paths a{color:var(--mint);text-decoration:underline;text-underline-offset:3px}
+
+/* ============ OBJECTIONS ============ */
+.obj-list{max-width:760px;margin:0 auto}
+.objection{border-left:3px solid var(--line);padding:6px 0 8px 28px;margin:0 0 34px;transition:border-color .4s}
+.objection:hover{border-color:var(--green)}
+.obj-q{font-family:var(--f-display);font-style:italic;font-size:1.18rem;color:var(--ink);margin-bottom:10px;line-height:1.4}
+.objection p{font-size:.96rem;line-height:1.72;margin:0}
+.objection p strong{color:var(--ink)}
+
+/* ============ FAQ ============ */
+.faq-wrap{max-width:760px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:first-child{border-top:2px solid var(--ink)}
+.faq-q{width:100%;background:none;border:none;text-align:left;padding:22px 40px 22px 2px;font-family:var(--f-body);font-size:1.05rem;font-weight:600;color:var(--ink);cursor:pointer;position:relative;line-height:1.45}
+.faq-q::after{content:'+';position:absolute;right:8px;top:50%;transform:translateY(-50%);font-family:var(--f-mono);font-size:1.3rem;color:var(--green);transition:transform .3s}
+.faq-item.open .faq-q::after{transform:translateY(-50%) rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s ease}
+.faq-a p{font-size:.95rem;line-height:1.72;padding:0 10px 24px 2px;margin:0}
+.faq-item.open .faq-a{max-height:420px}
+
+/* ============ FINAL ============ */
+.final-line{font-family:var(--f-display);font-size:clamp(1.5rem,4vw,2.2rem);font-style:italic;font-weight:500;color:#F2F1E8;text-align:center;line-height:1.4;max-width:740px;margin:0 auto 44px;text-wrap:balance}
+.final-line strong{color:var(--mint);font-style:normal}
+
+/* ============ FOOTER ============ */
+footer{background:#0D1F16;border-top:1px solid rgba(143,230,187,.35);padding:46px 28px 52px;font-family:var(--f-mono);font-size:.68rem;letter-spacing:.08em;color:#7E8F82;line-height:2.1;text-align:center}
+footer .f-brand{color:#F2F1E8;font-weight:600;text-transform:uppercase;letter-spacing:.2em;margin-bottom:8px}
+footer .f-brand i{color:var(--mint);font-style:normal}
+footer a{color:var(--mint);text-decoration:none}
+footer a:hover{text-decoration:underline}
+footer .f-legal{margin-top:16px;color:#5C6B5F;font-size:.62rem;line-height:1.9;max-width:640px;margin-left:auto;margin-right:auto}
+
+/* ============ HIGHLIGHT MARKER (как на лид-магните) ============ */
+.hl{background:linear-gradient(180deg,transparent 58%,rgba(47,146,104,.22) 58%);padding:0 3px}
+.bg-deep .hl{background:linear-gradient(180deg,transparent 58%,rgba(143,230,187,.26) 58%)}
+em.hl{font-style:italic}
+
+/* ============ INFOGRAPHIC CARDS ============ */
+.ig-card{background:var(--paper);border:1px solid var(--line);box-shadow:0 18px 50px rgba(20,40,30,.08);padding:26px 18px 18px;position:relative}
+.ig-caption{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);text-align:center;padding:14px 12px 4px;border-top:1px solid var(--line);margin-top:14px}
+.ig-caption b{color:var(--green);font-weight:600}
+
+.scheme-wrap{max-width:820px;margin:0 auto}
+.sch-mobile,.ch-mobile{display:none}
+.schm-panel{border:1px solid var(--line);background:#F1F0E9;padding:30px 14px 16px;position:relative}
+.schm-tab{position:absolute;top:-12px;left:10px;background:var(--bg-soft);border:1px solid var(--line);font-family:var(--f-mono);font-size:.56rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding:5px 10px;white-space:nowrap}
+.schm-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.schm-chips span{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid var(--line);background:var(--paper);color:var(--muted);padding:7px 12px;white-space:nowrap}
+.schm-quote{font-family:var(--f-display);font-style:italic;font-size:.95rem;color:var(--body-c);text-align:center;border:1px dashed var(--faint);padding:10px 12px;margin-top:12px}
+.schm-link{position:relative;height:100px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px}
+.schm-link::before{content:'';position:absolute;top:0;bottom:0;left:50%;width:0;border-left:1.5px dashed var(--green);opacity:.7}
+.schm-link::after{content:'▼';position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);color:var(--green);font-size:.6rem}
+.schm-dot{position:absolute;left:50%;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;background:var(--green-l);animation:schmDrop 1.8s ease-in-out infinite}
+@keyframes schmDrop{0%{top:4px;opacity:0}15%{opacity:1}85%{opacity:1}100%{top:82px;opacity:0}}
+.schm-badge{position:relative;z-index:2;font-family:var(--f-mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;background:var(--green);color:#F2F1E8;padding:6px 14px}
+.schm-note{position:relative;z-index:2;font-family:var(--f-body);font-style:italic;font-size:.78rem;color:var(--faint);background:var(--bg);padding:0 8px}
+.schm-panel.down{background:var(--deep);border-color:var(--green-l);padding-bottom:28px}
+.schm-panel.down .schm-tab{background:var(--deep);border-color:var(--green-l);color:var(--mint)}
+.schm-title{font-family:var(--f-display);font-style:italic;font-size:1.05rem;color:var(--mint);text-align:center;margin-bottom:12px}
+.schm-panel.down .schm-chips span{background:rgba(143,230,187,.06);border-color:rgba(143,230,187,.4);color:var(--mint-soft)}
+.schm-zone{margin:-14px auto 0;width:max-content;max-width:92%;position:relative;z-index:2;background:var(--mint);color:var(--deep);font-family:var(--f-mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:9px 16px;text-align:center}
+
+/* ceiling chart */
+.chart-wrap{max-width:760px;margin:46px auto 0}
+.draw-path{stroke-dasharray:1;stroke-dashoffset:1}
+.visible .draw-path{animation:drawLine 2.4s cubic-bezier(.5,.05,.3,1) forwards .3s}
+@keyframes drawLine{to{stroke-dashoffset:0}}
+.ceil-line{stroke-dasharray:7 7;animation:flowdash 2.2s linear infinite}
+.visible .pop-in{animation:popIn .5s ease forwards}
+.pop-in{opacity:0}
+.visible .pop-in.pp1{animation-delay:1.2s}
+.visible .pop-in.pp2{animation-delay:1.7s}
+.visible .pop-in.pp3{animation-delay:2.3s}
+@keyframes popIn{from{opacity:0}to{opacity:1}}
+
+/* fuel wave draw */
+.fuel-wave path{stroke-dasharray:1;stroke-dashoffset:1}
+.fuel-col.visible .fuel-wave path{animation:drawLine 1.8s ease forwards .35s}
+.fuel-wave circle{opacity:0}
+.fuel-col.visible .fuel-wave circle{animation:popIn .5s ease forwards 2s}
+
+/* lock sequence arrows */
+.lock-step:not(:last-child)::after{content:'→';position:absolute;right:-10px;top:50%;transform:translateY(-50%);font-family:var(--f-mono);font-size:1rem;color:var(--mint);z-index:3;text-shadow:0 0 8px rgba(14,32,24,.9)}
+
+/* timeline ticks */
+.tl-ticks{display:flex;justify-content:space-between;max-width:980px;margin:0 auto 8px;padding:0 1px}
+.tl-ticks i{width:1px;height:7px;background:var(--line);display:block}
+.tl-ticks i:nth-child(4n+1){height:12px;background:var(--faint)}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:900px){
+  .lock-step:not(:last-child)::after{display:none}
+  .sec{padding:76px 22px}
+  .sec.tight{padding:52px 22px}
+  .stat-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-cell{border-bottom:1px solid var(--line-dark)}
+  .stat-cell:nth-child(2n){border-right:none}
+  .stat-cell:nth-child(3),.stat-cell:nth-child(4){border-bottom:none}
+  .lock-seq{grid-template-columns:repeat(2,1fr)}
+  .lock-step + .lock-step{border-left:1px solid var(--line-dark)}
+  .lock-step:nth-child(2n+1){border-right:none}
+  .lock-step:nth-child(3),.lock-step:nth-child(4){border-top:none}
+  .day-steps{grid-template-columns:repeat(2,1fr);gap:22px}
+  .inc-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  nav{display:none}
+  .sch-desktop,.ch-desktop{display:none}
+  .sch-mobile,.ch-mobile{display:block}
+  .author-photo{min-height:0;aspect-ratio:1/1}
+  .ig-card{padding:18px 10px 12px}
+  .ig-caption{font-size:.56rem}
+  body{font-size:16px}
+  .mf-p{font-size:1rem}
+  .mf-em{font-size:1.12rem}
+  .sec{padding:60px 18px}
+  .sec.tight{padding:44px 18px}
+  .sec-sub{margin-bottom:36px}
+  .tag-line{margin-bottom:20px}
+  nav{padding:13px 18px}
+  nav.scrolled{padding:10px 18px}
+  .nav-logo span{display:none}
+  .hero{padding:104px 18px 64px}
+  .hero-sub{margin-bottom:34px}
+  .recap-grid{grid-template-columns:1fr}
+  .duo{grid-template-columns:1fr}
+  .fuel{grid-template-columns:1fr}
+  .ba{grid-template-columns:1fr}
+  .fit-grid{grid-template-columns:1fr}
+  .inc-grid{grid-template-columns:1fr}
+  .day-steps{grid-template-columns:1fr}
+  .tariffs{grid-template-columns:1fr}
+  .tariff.featured{order:-1}
+  .phase-card{grid-template-columns:1fr}
+  .phase-side{flex-direction:row;align-items:center;gap:16px;border-right:none;border-bottom:1px solid var(--line);padding:18px 22px}
+  .author-card{grid-template-columns:1fr}
+  .author-photo{min-height:230px}
+  .floor-body{padding:20px 18px}
+  .floor-head,.floor-divider{padding-left:18px;padding-right:18px}
+  .tl-days{font-size:.5rem}
+  .cta-btn{padding:16px 34px;font-size:.78rem}
+  .recog-item{gap:14px}
 }
 @media(max-width:380px){
-  .class-bar{padding:9px 12px 9px 18px;font-size:.6rem}
-  .header{padding:26px 13px 22px 18px}
-  .content{padding:26px 13px 36px 18px}
-  .masthead h1{font-size:1.4rem}
-  .masthead-sub{font-size:.95rem}
-  .info-grid,.info-grid.four{grid-template-columns:1fr}
-  .stat-row{flex-direction:column;gap:24px}
-  .data-panel{padding:24px 14px}
-  .product-block{padding:28px 14px}
-  .cta-btn{padding:18px 18px;font-size:1.04rem;max-width:100%}
-  .cta-btn-large{padding:20px 18px;font-size:1.1rem}
-  h2{font-size:1.22rem}
-  .pullquote{padding:20px 14px;font-size:1.08rem}
-  .floor-items{font-size:.72rem}
+  .sec{padding:52px 14px}
+  .sec.tight{padding:38px 14px}
+  .hero{padding:96px 14px 56px}
+  .cta-btn{max-width:100%;padding:15px 20px;font-size:.72rem;white-space:normal;line-height:1.4}
+  .t-price{font-size:2.2rem}
+  .stat-grid{grid-template-columns:1fr 1fr}
 }
-
-.versus{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:44px 0}
-.vs-col{padding:28px 26px;border:1px solid var(--line)}
-.vs-before{background:rgba(168,48,36,.04);border-left:3px solid var(--red-soft)}
-.vs-after{background:linear-gradient(135deg,#103A2B,#0C2E22);border-left:3px solid var(--accent-l)}
-.vs-tag{font-family:var(--f-mono);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px;font-weight:600}
-.vs-before .vs-tag{color:var(--red)}
-.vs-after .vs-tag{color:#8FE6BB}
-.vs-col ul{list-style:none}
-.vs-col li{position:relative;padding-left:26px;margin-bottom:15px;font-size:1.01rem;line-height:1.5}
-.vs-col li:last-child{margin-bottom:0}
-.vs-before li{color:var(--body)}
-.vs-after li{color:#CFE3D6}
-.vs-before li::before{content:'✕';position:absolute;left:0;top:0;color:var(--red);font-weight:700}
-.vs-after li::before{content:'✓';position:absolute;left:0;top:0;color:#8FE6BB;font-weight:700}
-@media(max-width:768px){.versus{grid-template-columns:1fr;gap:12px;margin:36px 0}.vs-col{padding:24px 20px}}
-.hl{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 220 14' preserveAspectRatio='none'%3E%3Cpath d='M3 8C45 3 95 11 140 6 175 2 200 9 217 6' fill='none' stroke='%232F9268' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 90%;background-size:100% .32em;padding-bottom:.05em}
-.mark{background:linear-gradient(180deg,transparent 55%,rgba(47,146,104,.22) 55%,rgba(47,146,104,.22) 93%,transparent 93%);padding:.02em .08em;border-radius:1px}
-@media(max-width:768px){.hl{background-size:100% .28em}}
 </style>
 </head>
 <body>
-<div class="page">
 
-<!-- ═══ TOP BAR ═══ -->
-<div class="class-bar">
-  <span>Протокол &#8470; MN-2026-0512</span>
-  <span class="level">Restricted</span>
-  <span class="open">Рассекречено</span>
-</div>
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <a href="#" class="nav-logo"><i>✦</i><span>Архитектура сознания</span></a>
+  <a href="#access" class="nav-cta">Получить доступ</a>
+</nav>
 
-<!-- ═══ HEADER ═══ -->
-<div class="header">
-  <div class="header-top">
-    <span class="header-id">Архитектура сознания · @thebodymindcode</span>
-    <span class="header-stamp">Declassified</span>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="tag-line"><span class="tl"></span><span>Закрытая программа · Нейробиология денег</span><span class="tl"></span></div>
+  <h1 class="hero-h1">Протокол <em>денег</em></h1>
+  <p class="hero-sub">17 дней, чтобы вернуть себе право решать, <span class="hl">сколько&nbsp;у&nbsp;вас&nbsp;денег</span></p>
+
+
+  <div class="hero-meta">
+    <span><i></i>Старт потока 17 июня</span>
+    <span><i></i>17 дней</span>
+    <span><i></i>20 минут в день</span>
+    <span><i></i>Закрытый Telegram-канал</span>
   </div>
-  <div class="masthead">
-    <div class="masthead-label">Нейробиология денег · Доступ ограничен</div>
-    <h1>Кто решает, сколько у&nbsp;вас <span class="hl">денег</span>?</h1>
-    <p class="masthead-sub">Внутри вас есть тот, кто однажды назначил вашему доходу потолок. Вы его никогда не видели — но подчиняетесь ему каждый день.</p>
-    <div class="masthead-line"><div class="masthead-dot"></div></div>
+  <div>
+    <a href="#access" class="cta-btn">Получить доступ →</a>
+    <div class="cta-note">Доступ к материалам остаётся навсегда</div>
   </div>
-</div>
+</section>
 
-<!-- ═══ HERO IMAGE [01] ═══ -->
-<div class="photo-block bw">
-  <img src="https://thebodymindcode.github.io/moneyprotocol/b14e5bdcc078f891d52ebf8eb97695af_10e10c1b-507d-415d-a82a-a45fa9c2969a.jpg" alt="Профиль головы, внутри — банковский сейф с деньгами: кто решает, сколько у вас денег">
-  <div class="photo-caption">
-    <span>Досье · Нейробиология денежного поведения · 1971–2024 · рассекречено</span>
-    <span class="tag">Classified</span>
+<!-- ============ MANIFEST ============ -->
+<section class="sec tight bg-paper">
+  <div class="wrap-n">
+    <div class="mf-mark">✦</div>
+    <p class="mf-p fade-in">Сколько бы вы ни старались, доход упирается в одну и ту же сумму и каждый раз сползает обратно. Будто внутри сидит кто-то, кому невыгодно, чтобы вы поднялись&nbsp;выше.</p>
+    <p class="mf-em fade-in d1">Он реален. И его можно перенастроить там, где он живёт: <span class="hl">глубже мыслей, целей и&nbsp;решений</span>.</p>
   </div>
-</div>
+</section>
 
-<!-- ═══ CONTENT ═══ -->
-<div class="content">
-
-<!-- ВСТУПЛЕНИЕ -->
-<p class="lead-line">Назовите сумму, на которой застрял ваш доход.</p>
-
-<p class="dropcap">Вы её знаете. С точностью до десятков тысяч. Это та цифра, к которой вы возвращаетесь год за годом, как бы вы ни старались. Иногда выше. Иногда ниже. Но потом снова она.</p>
-
-<p>Откуда вы так точно её знаете?</p>
-
-<p>Потому что её кто-то <strong>назначил</strong>. Не рынок. Не кризис. Не ваша профессия и не «время сейчас такое». Внутри вас есть тот, кто однажды поставил эту планку и с тех пор следит, чтобы вы её не переходили. Поднялись выше, он находит способ вернуть вниз. Появились лишние деньги, он подсказывает, куда их деть. Замаячил рост, и вы сами, своими руками, всё аккуратно обнуляете. И остаётесь уверены, что это просто так совпало.</p>
-
-<p><strong>Это не совпадение.</strong> Это его работа.</p>
-
-<p>Вы никогда его не видели. Но <span class="mark">подчиняетесь ему всю жизнь</span>.</p>
-
-<p>В этой статье вы наконец с ним познакомитесь. Узнаете, кто он, когда появился, чем питается и почему оказывается сильнее любой вашей цели. И поймёте, где спрятан единственный ключ, который его отключает, — тот, до которого не добрались ни книги, ни курсы, которые вы уже прошли.</p>
-
-<div class="sidebar">
-  <div class="sidebar-title">&#9608; Предупреждение</div>
-  <p>После этого «как раньше» не получится. Знание этого механизма <strong>необратимо</strong>.</p>
-</div>
-
-<div class="sep"><div class="sep-icon"></div></div>
-
-<p>Скорее всего, вы уже пытались пробить свой потолок.</p>
-
-<p>Вы читали книги про деньги и мышление, и на неделю появлялось вдохновение, а потом цифра оставалась прежней. Вы проходили курсы, тренинги, марафоны, выходили заряженными, а через месяц были там же, откуда начинали. Вы работали больше, брали ещё клиентов, ещё проекты, ещё часы, и единственное, что выросло — это усталость. Не доход.</p>
-
-<p>Вы один раз подняли себе цену и через пару недель тихо вернули обратно. «Чтобы точно купили». Вы ставили большие цели, писали планы, рисовали карты желаний, цели остались на бумаге. Может, вы даже ходили к психологу. Долго разбирали детство, маму, папу. Стало легче жить, а сумма на счёте не сдвинулась ни на рубль.</p>
-
-<!-- ИНФОГРАФИКА — что вы уже пробовали (SVG-иконки, картинка не нужна) -->
-<div class="info-grid six">
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><path d="M6 5h13a3 3 0 0 1 3 3v19a3 3 0 0 0-3-3H6z"/><path d="M26 5H19a3 3 0 0 0-3 3v19a3 3 0 0 1 3-3h7z"/></svg>
-    <div class="info-cell-label">Книги</div>
-    <div class="info-cell-val">вдохновение на неделю</div>
+<!-- ============ STAT STRIP ============ -->
+<section class="stat-strip">
+  <div class="stat-grid">
+    <div class="stat-cell fade-in"><div class="stat-num" data-count="12">0</div><div class="stat-label">миллисекунд: страх включается раньше, чем вы успели подумать</div></div>
+    <div class="stat-cell fade-in d1"><div class="stat-num" data-count="95">0<sup>%</sup></div><div class="stat-label">решений принимаются без участия сознания</div></div>
+    <div class="stat-cell fade-in d2"><div class="stat-num" data-count="4">0</div><div class="stat-label">уровня, на которых держится программа: сознание, подсознание, тело, гормоны</div></div>
+    <div class="stat-cell fade-in d3"><div class="stat-num" data-count="17">0</div><div class="stat-label">дней нужно, чтобы вы переписали её на всех четырёх уровнях</div></div>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><rect x="5" y="8" width="22" height="15" rx="1.5"/><path d="M11 27h10M16 23v4"/></svg>
-    <div class="info-cell-label">Курсы</div>
-    <div class="info-cell-val">через месяц там же</div>
+</section>
+
+<!-- ============ ALL RIGHT ============ -->
+<section class="sec bg-paper">
+  <div class="wrap-n">
+    <div class="tag-line"><span class="tl"></span><span>01 · Главное</span><span class="tl"></span></div>
+    <h2 class="sec-h">С вами всё в&nbsp;<em>порядке</em></h2>
+    <p>Деньги приходят не к лучшим. Будь иначе, богаче всех жили бы самые добрые, честные и трудолюбивые. Вы знаете, что это не так. Среди тех, у кого денег много, хватает людей с тяжёлым детством, с зависимостями, с разрушенными отношениями, с характером, от которого окружающие разбегаются. Деньгам всё равно. У них нет морали, и по заслугам они себя не раздают.</p>
+    <p style="margin-top:16px">Значит, ваши сложности с деньгами никогда не были приговором вам как человеку. <strong class="hl">С вами всё в порядке.</strong> Деньги живут по другим правилам, и правила эти не про то, насколько вы хороши.</p>
+    <p style="margin-top:16px">А вот по каким? Самое интересное. Правила, по которым деньги ведут себя именно у вас, записаны внутри. Давно, не вами и без вашего согласия. <strong>И их можно переписать.</strong></p>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><path d="M16 9v7l5 3"/></svg>
-    <div class="info-cell-label">Больше работы</div>
-    <div class="info-cell-val">выросла усталость</div>
+</section>
+
+<!-- ============ RECAP ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>02 · Вы уже знаете</span><span class="tl"></span></div>
+    <h2 class="sec-h">Кто назначил вашему доходу&nbsp;<em>потолок</em></h2>
+    <p class="sec-sub">Если вы пришли из досье «Кто решает, сколько у вас денег?», это короткое напоминание. Если нет, <span class="hl">вот четыре факта, на которых стоит весь&nbsp;протокол:</span></p>
+
+    <div class="recap-grid">
+      <div class="recap-card fade-in">
+        <div class="rc-num">ФАКТ 01</div>
+        <h3>Решение принято за&nbsp;вас</h3>
+        <p>Сигнал угрозы доходит до центра страха за <strong>12 миллисекунд</strong>, раньше любой мысли. Поэтому занизить цену «решали» не вы. <strong>Это программа отдёргивала вашу руку</strong>, а разум подбирал приличное объяснение. Вины здесь нет: спорить с рефлексом силой воли невозможно. Его можно только перенастроить.</p>
+      </div>
+      <div class="recap-card fade-in d1">
+        <div class="rc-num">ФАКТ 02</div>
+        <h3>Тело возвращает деньги, которые не считает&nbsp;своими</h3>
+        <p>У тела есть <strong>точка отсчёта по деньгам</strong>, и оно защищает её, как температуру 36,6. Деньги выше внутренней нормы тело отторгает, как пересаженный орган. Вы не теряете деньги: <strong>их возвращает программа</strong>, маскируя это под разумные решения. Характер ни при чём. Пока норма прежняя, тело будет к ней возвращать. Значит, сдвигать нужно норму.</p>
+      </div>
+      <div class="recap-card fade-in d2">
+        <div class="rc-num">ФАКТ 03</div>
+        <h3>Ваш доход не может быть больше&nbsp;вас</h3>
+        <p>Мозг охраняет <strong>образ себя</strong> сильнее, чем деньги. Когда реальность становится лучше, чем «кто я», он чувствует не радость, а тревогу. И у него два выхода: подтянуть образ себя до новой реальности или уронить реальность обратно. <strong>Сам по себе он всегда выбирает второй.</strong> Пока вы осознанно не выберете первый. Именно это делается в протоколе.</p>
+      </div>
+      <div class="recap-card fade-in d3">
+        <div class="rc-num">ФАКТ 04</div>
+        <h3>Программа записана там, где нет&nbsp;слов</h3>
+        <p>Рефлекс, норма, образ себя, гормоны: ничего из этого <strong>не сделано из слов</strong>. А книги, курсы и разговоры с психологом сделаны только из них. Вы пытались словами достучаться до этажа, на котором слов не существует. <strong>Это всё равно что объяснять голос по факсу.</strong></p>
+      </div>
+    </div>
+
+    <div class="recap-foot fade-in">Каждый из этих фактов подробно разобран в досье, с исследованиями и механизмами. Если ещё не читали, <a href="https://thebodymindcode.github.io/moneyprotocol/" target="_blank" rel="noopener">начните с него</a>.</div>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><path d="M15 5h7a5 5 0 0 1 5 5v7L16 28 4 16z"/><circle cx="21" cy="11" r="1.6"/></svg>
-    <div class="info-cell-label">Подняли цену</div>
-    <div class="info-cell-val">тихо вернули назад</div>
+</section>
+
+<!-- ============ RECOGNITION ============ -->
+<section class="sec bg-soft">
+  <div class="wrap-m">
+    <div class="tag-line"><span class="tl"></span><span>03 · Проверьте себя</span><span class="tl"></span></div>
+    <h2 class="sec-h">Пока вы это читаете, программа&nbsp;<em>работает</em></h2>
+    <p class="sec-sub">Прямо сейчас. Не в теории, а <span class="hl">в ваших сегодняшних решениях</span>. Посмотрите, что из этого вам&nbsp;знакомо.</p>
+
+    <div class="recog-list">
+      <div class="recog-item fade-in"><span class="recog-num">01</span><span class="recog-text">Я знаю сумму, на которой мой доход стоит годами. <strong>Он к ней возвращается.</strong> Иногда выше, иногда ниже. Но потом снова она.</span></div>
+      <div class="recog-item fade-in"><span class="recog-num">02</span><span class="recog-text">Деньги появляются и почти сразу <strong>куда-то деваются</strong>. Поломка. Налог. «Надо помочь». Срочная трата, которая «как нарочно» подвернулась именно сейчас.</span></div>
+      <div class="recog-item fade-in"><span class="recog-num">03</span><span class="recog-text">Лучший месяц нередко сменяется <strong>необъяснимо провальным</strong>, будто что-то выравнивает счёт.</span></div>
+      <div class="recog-item fade-in"><span class="recog-num">04</span><span class="recog-text">Занижаю цену, стесняюсь назвать, сколько стою, <strong>боюсь «отпугнуть»</strong>. Один раз поднял(а) цену и через пару недель тихо вернул(а) обратно.</span></div>
+      <div class="recog-item fade-in"><span class="recog-num">05</span><span class="recog-text">Когда дела идут в гору, я почему-то <strong>сам(а) всё притормаживаю</strong>. Расслабляюсь не вовремя. «Забываю» сделать решающий шаг.</span></div>
+      <div class="recog-item fade-in"><span class="recog-num">06</span><span class="recog-text">Сколько бы я ни зарабатывал(а), ощущение <strong>«мало» и «небезопасно»</strong> не уходит. Сумма растёт, а тревога просто меняет имя: «а вдруг потеряю».</span></div>
+    </div>
+
+    <div class="chart-wrap ig-card fade-in">
+      <svg class="ch-desktop" viewBox="0 0 760 250" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="График дохода: каждый подъём заканчивается у одной и той же линии потолка">
+        <line x1="40" y1="218" x2="720" y2="218" stroke="#DCDAD0" stroke-width="1"/>
+        <text x="40" y="238" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="2" fill="#8B948A">ГОД ЗА ГОДОМ →</text>
+        <text x="720" y="238" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="2" fill="#8B948A" text-anchor="end">ДОХОД</text>
+
+        <!-- потолок -->
+        <line class="ceil-line" x1="40" y1="66" x2="720" y2="66" stroke="#A83024" stroke-width="1.4" opacity=".75"/>
+        <rect x="40" y="40" width="158" height="24" fill="rgba(168,48,36,.07)" stroke="rgba(168,48,36,.4)" stroke-width="1"/>
+        <text x="119" y="56" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#A83024" text-anchor="middle">ВАШ ПОТОЛОК</text>
+
+        <!-- кривая дохода -->
+        <path class="draw-path" pathLength="1" d="M40,210 L110,140 L150,172 L210,92 L250,152 L320,76 L360,168 L430,72 L470,152 L540,70 L580,162 L650,72 L720,150" fill="none" stroke="#1C5C44" stroke-width="2" stroke-linejoin="round"/>
+
+        <!-- подписи -->
+        <g class="pop-in pp1">
+          <line x1="430" y1="68" x2="430" y2="58" stroke="#8B948A" stroke-width="1"/>
+          <text x="430" y="50" font-family="Source Serif 4, Georgia, serif" font-size="13" font-style="italic" fill="#5F6A60" text-anchor="middle">лучший месяц за год</text>
+        </g>
+        <g class="pop-in pp2">
+          <line x1="470" y1="156" x2="470" y2="168" stroke="#8B948A" stroke-width="1"/>
+          <text x="470" y="186" font-family="Source Serif 4, Georgia, serif" font-size="13" font-style="italic" fill="#5F6A60" text-anchor="middle">необъяснимый провал сразу за ним</text>
+        </g>
+        <g class="pop-in pp3">
+          <circle cx="720" cy="150" r="4" fill="#A83024"/>
+          <text x="712" y="128" font-family="Source Serif 4, Georgia, serif" font-size="13" font-style="italic" fill="#A83024" text-anchor="end">и снова та же отметка</text>
+        </g>
+      </svg>
+      <svg class="ch-mobile" viewBox="0 0 360 290" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="График дохода: каждый подъём заканчивается у одной и той же линии потолка">
+        <line x1="16" y1="240" x2="344" y2="240" stroke="#DCDAD0" stroke-width="1"/>
+        <text x="16" y="262" font-family="IBM Plex Mono, monospace" font-size="8.5" letter-spacing="1.5" fill="#8B948A">ГОД ЗА ГОДОМ →</text>
+        <text x="344" y="262" font-family="IBM Plex Mono, monospace" font-size="8.5" letter-spacing="1.5" fill="#8B948A" text-anchor="end">ДОХОД</text>
+        <line class="ceil-line" x1="16" y1="72" x2="344" y2="72" stroke="#A83024" stroke-width="1.4" opacity=".75"/>
+        <rect x="16" y="48" width="126" height="22" fill="rgba(168,48,36,.07)" stroke="rgba(168,48,36,.4)" stroke-width="1"/>
+        <text x="79" y="63" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1.5" fill="#A83024" text-anchor="middle">ВАШ ПОТОЛОК</text>
+        <path class="draw-path" pathLength="1" d="M16,232 L66,150 L96,180 L146,94 L182,168 L238,80 L272,170 L344,156" fill="none" stroke="#1C5C44" stroke-width="2" stroke-linejoin="round"/>
+        <g class="pop-in pp1">
+          <line x1="238" y1="74" x2="238" y2="64" stroke="#8B948A" stroke-width="1"/>
+          <text x="238" y="56" font-family="Source Serif 4, Georgia, serif" font-size="11.5" font-style="italic" fill="#5F6A60" text-anchor="middle">лучший месяц</text>
+        </g>
+        <g class="pop-in pp2">
+          <line x1="272" y1="174" x2="272" y2="186" stroke="#8B948A" stroke-width="1"/>
+          <text x="272" y="202" font-family="Source Serif 4, Georgia, serif" font-size="11.5" font-style="italic" fill="#5F6A60" text-anchor="middle">провал сразу за ним</text>
+        </g>
+        <g class="pop-in pp3">
+          <circle cx="344" cy="156" r="4" fill="#A83024"/>
+          <text x="338" y="134" font-family="Source Serif 4, Georgia, serif" font-size="11.5" font-style="italic" fill="#A83024" text-anchor="end">снова та же отметка</text>
+        </g>
+      </svg>
+      <div class="ig-caption">Схема 01 · Кривая, которую вы узнаёте: каждый подъём заканчивается <b>у одной и той же линии</b></div>
+    </div>
+
+    <div class="recog-after fade-in">Это не про характер и не про невезение. Это почерк одной и той же программы. Дальше про то, как она устроена и где у неё&nbsp;рычаг.</div>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="6"/><circle cx="16" cy="16" r="1.6"/></svg>
-    <div class="info-cell-label">Цели и планы</div>
-    <div class="info-cell-val">остались на бумаге</div>
+</section>
+
+<!-- ============ FLOORS ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>04 · Почему ничего не сработало</span><span class="tl"></span></div>
+    <h2 class="sec-h">Всё это время вы чинили не тот&nbsp;<em>этаж</em></h2>
+    <p class="sec-sub">У психики два этажа. Книги, курсы, мотивация, даже разбор детства работают с верхним. Вам ставят новый софт. <span class="hl">А он крутится поверх старой операционной системы, которую никто не&nbsp;трогал.</span></p>
+
+    <div class="scheme-wrap ig-card fade-in">
+    <svg class="sch-desktop" viewBox="0 0 780 426" xmlns="http://www.w3.org/2000/svg" width="100%" role="img" aria-label="Схема: решения о деньгах принимает нижний уровень — денежная программа. Протокол работает с ним.">
+      <!-- ВЕРХНЯЯ ПАНЕЛЬ -->
+      <rect x="90" y="30" width="600" height="118" fill="#F4F3EE" stroke="#C9C5B8" stroke-width="1"/>
+      <rect x="110" y="18" width="252" height="24" fill="#ECEAE1" stroke="#C9C5B8" stroke-width="1"/>
+      <text x="236" y="34" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#5F6A60" text-anchor="middle">ВЕРХНИЙ УРОВЕНЬ · СОЗНАНИЕ</text>
+
+      <g font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2">
+        <rect x="248" y="58" width="86" height="28" fill="#FBFAF6" stroke="#DCDAD0"/>
+        <text x="291" y="76" fill="#5F6A60" text-anchor="middle">МЫСЛИ</text>
+        <rect x="348" y="58" width="70" height="28" fill="#FBFAF6" stroke="#DCDAD0"/>
+        <text x="383" y="76" fill="#5F6A60" text-anchor="middle">ЦЕЛИ</text>
+        <rect x="432" y="58" width="100" height="28" fill="#FBFAF6" stroke="#DCDAD0"/>
+        <text x="482" y="76" fill="#5F6A60" text-anchor="middle">РЕШЕНИЯ</text>
+      </g>
+      <rect x="232" y="98" width="316" height="36" fill="none" stroke="#8B948A" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="390" y="122" font-family="Fraunces, Georgia, serif" font-size="17" font-style="italic" fill="#39443D" text-anchor="middle">«решаю зарабатывать больше»</text>
+
+      <!-- СИГНАЛ ВНИЗ -->
+      <line class="svg-flow" x1="390" y1="148" x2="390" y2="252" stroke="#1C5C44" stroke-width="1.4"/>
+      <circle cx="390" r="4.5" fill="#2F9268">
+        <animate attributeName="cy" values="152;248" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.85;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <polyline points="381,243 390,254 399,243" fill="none" stroke="#1C5C44" stroke-width="1.4" stroke-linejoin="round"/>
+      <rect x="412" y="186" width="160" height="26" fill="#1C5C44"/>
+      <text x="492" y="203" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" fill="#F2F1E8" text-anchor="middle">СИГНАЛ · 12 МС</text>
+      <text x="368" y="203" font-family="Source Serif 4, Georgia, serif" font-size="12" font-style="italic" fill="#8B948A" text-anchor="end">перехватывается раньше мысли</text>
+
+      <!-- НИЖНЯЯ ПАНЕЛЬ -->
+      <rect x="90" y="262" width="600" height="126" fill="#0E2018" stroke="#2F9268" stroke-width="1.4"/>
+      <rect x="110" y="250" width="318" height="24" fill="#0E2018" stroke="#2F9268" stroke-width="1"/>
+      <text x="269" y="266" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="2" fill="#8FE6BB" text-anchor="middle">НИЖНИЙ УРОВЕНЬ · ДЕНЕЖНАЯ ПРОГРАММА</text>
+
+      <text x="390" y="300" font-family="Fraunces, Georgia, serif" font-size="20" font-style="italic" fill="#8FE6BB" text-anchor="middle">то, что решает на самом деле</text>
+
+      <g font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1.5">
+        <rect x="183" y="316" width="96" height="28" fill="rgba(143,230,187,.06)" stroke="rgba(143,230,187,.4)"/>
+        <text x="231" y="334" fill="#CFE3D6" text-anchor="middle">РЕФЛЕКС</text>
+        <rect x="291" y="316" width="76" height="28" fill="rgba(143,230,187,.06)" stroke="rgba(143,230,187,.4)"/>
+        <text x="329" y="334" fill="#CFE3D6" text-anchor="middle">НОРМА</text>
+        <rect x="379" y="316" width="110" height="28" fill="rgba(143,230,187,.06)" stroke="rgba(143,230,187,.4)"/>
+        <text x="434" y="334" fill="#CFE3D6" text-anchor="middle">ОБРАЗ СЕБЯ</text>
+        <rect x="501" y="316" width="96" height="28" fill="rgba(143,230,187,.06)" stroke="rgba(143,230,187,.4)"/>
+        <text x="549" y="334" fill="#CFE3D6" text-anchor="middle">ГОРМОНЫ</text>
+      </g>
+
+      <circle class="svg-pulse" cx="124" cy="330" r="4" fill="#2F9268"/>
+      <circle class="svg-pulse p2" cx="656" cy="330" r="4" fill="#2F9268"/>
+      <circle class="svg-pulse p3" cx="138" cy="288" r="3" fill="#8FE6BB"/>
+      <circle class="svg-pulse p4" cx="642" cy="288" r="3" fill="#8FE6BB"/>
+      <text x="390" y="372" font-family="IBM Plex Mono, monospace" font-size="9" letter-spacing="2.5" fill="#7E8F82" text-anchor="middle">РЕФЛЕКС 12 МС · НОРМА ПО ДЕНЬГАМ · РОЛЬ · ПРОГНОЗ МОЗГА</text>
+
+      <!-- ЗОНА РАБОТЫ -->
+      <rect x="278" y="376" width="224" height="28" fill="#8FE6BB"/>
+      <text x="390" y="394" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="2" font-weight="600" fill="#0E2018" text-anchor="middle">ЗОНА РАБОТЫ ПРОТОКОЛА</text>
+    </svg>
+
+    <div class="sch-mobile">
+      <div class="schm-panel up">
+        <div class="schm-tab">Верхний уровень · Сознание</div>
+        <div class="schm-chips"><span>Мысли</span><span>Цели</span><span>Решения</span></div>
+        <div class="schm-quote">«решаю зарабатывать больше»</div>
+      </div>
+      <div class="schm-link">
+        <i class="schm-dot"></i>
+        <span class="schm-badge">Сигнал · 12 мс</span>
+        <span class="schm-note">перехватывается раньше мысли</span>
+      </div>
+      <div class="schm-panel down">
+        <div class="schm-tab">Нижний уровень · Денежная программа</div>
+        <div class="schm-title">то, что решает на самом деле</div>
+        <div class="schm-chips"><span>Рефлекс</span><span>Норма</span><span>Образ себя</span><span>Гормоны</span></div>
+      </div>
+      <div class="schm-zone">Зона работы протокола</div>
+    </div>
+    <div class="ig-caption">Схема 02 · Два уровня психики: где вы пытались <b>и где работает протокол</b></div>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><path d="M16 27s-9-5.5-9-12a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 6.5-9 12-9 12z"/></svg>
-    <div class="info-cell-label">Психолог</div>
-    <div class="info-cell-val">легче жить, счёт прежний</div>
+
+
+    <div class="floors-foot fade-in">
+      <p>И каждое утро операционная система загружается заново и стирает всё, что вы накатили сверху. Вы прошли мощный курс, вышли с горящими глазами и планом на миллион. В понедельник энергия. К среде выдохлось. Через неделю вы там же, где были. Это не слабость воли. Это система, которая просто загрузилась по умолчанию. Как загружается всегда.</p>
+      <p>Всё это время вы жали на педаль газа. Только машина стояла на нейтралке. <strong class="hl">А рычаг передачи находится на нижнем этаже.</strong> Туда вам просто никто не показывал дорогу. Дальше именно о ней.</p>
+    </div>
   </div>
-</div>
+</section>
 
-<p>Вы сделали почти всё, что советуют. И ничего не сработало.</p>
+<!-- ============ WORDS VS STATE ============ -->
+<section class="sec bg-soft">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>05 · Канал</span><span class="tl"></span></div>
+    <h2 class="sec-h">Словами туда не достучаться. А <em>состоянием</em>&nbsp;можно</h2>
+    <p class="sec-sub">Вся денежная программа записана на этаже, <span class="hl">где нет слов</span>. Поэтому слова туда и не проходят. А всё, что вы пробовали, было из&nbsp;слов.</p>
 
-<p>Вот первый неудобный вывод этой статьи: <strong>дело не в том, что вы делали мало. Дело в том, что всё это било мимо.</strong> Ни одно из этих действий даже не приблизилось к тому, кто на самом деле держит ваш потолок. Они работали с тем, что на поверхности. А он сидит глубоко, на уровне, который вам ни разу не показывали.</p>
-
-<p><strong>Сейчас покажу.</strong></p>
-
-<!-- ═══ ЧАСТЬ I ═══ -->
-<div class="part-header"><span>Часть&nbsp;I</span><span class="classified">Classified</span></div>
-<h2 class="part-title">Решение принято <span class="hl">за&nbsp;вас</span></h2>
-
-<p>Начнём с факта, который переворачивает всё остальное.</p>
-
-<p><strong>Ваш мозг не умеет беспокоиться о деньгах.</strong> Он физически на это не способен. Деньги для него — пустой звук, абстракция, цифры на экране, которых в природе не существует. У мозга нет органа, отвечающего за деньги.</p>
-
-<p>Зато у него есть орган, отвечающий за <strong>угрозу жизни</strong>. И когда вы думаете о деньгах — тревожно, с напряжением, со сжатием в груди, — работает именно он. Мозг берёт абстракцию «деньги» и переводит её на единственный язык, который понимает: <strong>опасно или безопасно. Выживу или нет.</strong></p>
-
-<p>Поэтому пустой счёт ощущается не как математическая задача. Он ощущается как <strong>угроза</strong>. Как будто за вами кто-то гонится. Тело реагирует одинаково, потому что для древней части мозга «мало денег» и «приближается хищник» это <strong>один и тот же сигнал тревоги</strong>.</p>
-
-<p>И вот здесь первый инсайт, после которого многое встаёт на места.</p>
-
-<p>С угрозой жизни <strong>нельзя договориться</strong>. Нельзя «решить не бояться» змеи. Нельзя силой воли не отдёрнуть руку от огня. Реакция на угрозу — <span class="mark">это не выбор</span>. Она срабатывает раньше любого выбора.</p>
-
-<p>Насколько раньше — измерили.</p>
-
-<!-- ФОТО [02] -->
-<div class="photo-block bw">
-  <img src="https://thebodymindcode.github.io/moneyprotocol/1268df0eca0e4c1eaadc255997dc3658_bananalab-nb2_1K.jpg" alt="МРТ мозга с пометкой 12 мс — реакция страха в лимбической системе" loading="lazy">
-  <div class="photo-caption">
-    <span>Лимбическая система · реакция на угрозу · Fig. 1 · LeDoux</span>
-    <span class="tag">Fig. 1</span>
+    <div class="duo">
+      <div class="duo-col bad fade-in">
+        <div class="duo-tag">Всё, что вы пробовали</div>
+        <h3>Из слов</h3>
+        <p>Объяснять голос по факсу. Канал не тот, сигнал не доходит.</p>
+        <ul>
+          <li>Книги: вдохновение на неделю, цифра прежняя</li>
+          <li>Курсы и тренинги: через месяц вы там же</li>
+          <li>Цели и аффирмации: остались на бумаге</li>
+          <li>Психолог: легче жить, счёт прежний</li>
+          <li>Осознание садится в голову. А программа живёт в теле и в образе себя, куда слова не достают</li>
+        </ul>
+      </div>
+      <div class="duo-col good fade-in d1">
+        <div class="duo-tag">Язык нижнего этажа</div>
+        <h3>Состояние · образ ·&nbsp;повторение</h3>
+        <p>Ровно то, на чём мозг учился всему ещё до того, как вы узнали своё первое слово. Не уговаривать его, а показывать новое состояние, снова и снова, пока оно не станет тем, что грузится по умолчанию.</p>
+        <ul>
+          <li>Состояние: практика передаёт его напрямую, в обход анализа</li>
+          <li>Образ: язык, который подсознание читает без перевода</li>
+          <li>Повторение: едва заметная тропинка становится автострадой</li>
+          <li>На этом языке протокол говорит все 17 дней</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<p>Нейробиолог <strong>Жозеф Леду</strong> доказал: сигнал угрозы доходит до центра страха за <strong>12 миллисекунд</strong>. До коры — той части мозга, которой вы думаете, рассуждаете и «принимаете решения», — сигнал идёт в разы дольше. Это значит, что страх включается <strong>раньше</strong>, чем вы успеваете подумать. По оценкам исследователей, до <strong>95%</strong> наших решений принимаются вообще без участия сознания, на автомате, рефлекторно, ещё до того, как «вы» подключились.</p>
+<!-- ============ MEANINGS ============ -->
+<section class="sec">
+  <div class="wrap-n">
+    <div class="tag-line"><span class="tl"></span><span>06 · Корень</span><span class="tl"></span></div>
+    <h2 class="sec-h">Чего вы на самом деле хотите, когда хотите&nbsp;<em>денег</em></h2>
+    <p>Понаблюдайте за собой. Сколько бы ни приходило, спокойствие не наступает. Сумма, на которой «вот теперь отпустит», всё время отодвигается на шаг вперёд. Вы догоняете, а горизонт уходит.</p>
+    <p style="margin-top:16px">Так и должно быть. Деньги означают для вас совсем не то, что напечатано на купюре. Мозг не способен хотеть цифру на экране: за ней он держит что-то живое, очень личное и обычно скрытое даже от вас самих. <span class="hl">То, чего не хватало задолго до первой зарплаты.</span></p>
+    <p style="margin-top:16px">У одного под деньгами «смогу наконец выдохнуть и перестать бояться». У другого «стану свободен, и никто мне больше не указ». У третьего «значит, я чего-то стою, меня видят». У кого-то там желание быть принятым. У кого-то давнее тихое право вообще хотеть и занимать место.</p>
 
-<div class="stat-row">
-  <div class="stat"><div class="stat-num">12 мс</div><div class="stat-label">включается страх —<br>сознание подключается позже</div></div>
-  <div class="stat"><div class="stat-num">~95%</div><div class="stat-label">решений принимаются раньше,<br>чем вы успели подумать</div></div>
-</div>
+    <div class="mean-wrap fade-in" style="margin-top:30px">
+      <span class="mean">Выдохнуть и не бояться</span>
+      <span class="mean">Свобода</span>
+      <span class="mean">Меня видят</span>
+      <span class="mean">Быть принятым</span>
+      <span class="mean">Право хотеть</span>
+      <span class="mean hot">А что под вашими?</span>
+    </div>
 
-<p>Теперь переведите это на деньги. И узнайте себя.</p>
+    <p>И пока это не названо, вы будете промахиваться: гнаться за суммой, которая закрывает не ту дыру. <strong class="hl" style="color:var(--green)">Здесь и спрятан настоящий рычаг.</strong></p>
 
-<p>Каждый раз, когда вы «решали» назвать цену поменьше, вы не решали. Вы <strong>отдёргивали руку</strong>. Страх сработал за 12 миллисекунд, тело сжалось, и только потом разум подобрал приличное объяснение: «ну, клиент бы не потянул», «сейчас не время», «надо быть скромнее».</p>
-
-<p>Каждый раз, когда вы «передумывали» вкладываться, расширяться, просить больше, это был не расчёт. Это был рефлекс, надевший маску расчёта.</p>
-
-<p>Вы были уверены, что <strong>думаете</strong>. А вы <strong>оправдывали</strong> реакцию, которая случилась без вас.</p>
-
-<p>Вот почему не работает «просто реши зарабатывать больше», «настройся», «поверь в себя». Любое решение, любая мотивация, любая аффирмация приходит <strong>на 12 миллисекунд позже</strong>, чем уже сработала программа. Вы пытаетесь переспорить рефлекс словами. А рефлекс слова не слышит, он сработал и ушёл, пока вы открывали рот.</p>
-
-<p>И теперь то, от чего по-настоящему холодеет.</p>
-
-<p>Раз мозг читает деньги как <strong>выживание</strong>, а не как математику, значит, никакая сумма его не успокоит. Программу выживания <strong>нельзя выключить деньгами</strong>. Потому что она реагирует не на количество, а на <strong>состояние</strong>. Можно заработать миллион, и тревога останется, просто станет «а вдруг потеряю». Можно закрыть все долги, и мозг немедленно найдёт новую угрозу.</p>
-
-<div class="pullquote">Нет такой суммы, после которой вы почувствуете себя в безопасности. Потому что тревожит вас не сумма.</div>
-
-<p>Вот почему «вот заработаю — и тогда успокоюсь» не сбывается никогда. Сначала не приходит спокойствие. А пока нет спокойствия, не приходят и деньги. Об этом дальше. Но запомните вывод, он ключевой: <strong>проблема никогда не была в количестве денег. А значит, и ключ не в нём.</strong></p>
-
-<!-- ═══ ЧАСТЬ II ═══ -->
-<div class="part-header"><span>Часть&nbsp;II</span><span class="classified">Classified</span></div>
-<h2 class="part-title">Тело возвращает деньги, которые <span class="hl">не считает&nbsp;своими</span></h2>
-
-<p>Если бы дело было только в мыслях, всё решалось бы просто: подумай иначе, и готово. Но программа денег живёт <strong>не в мыслях</strong>. Она живёт в <strong>теле</strong>. И это меняет правила игры.</p>
-
-<p>Психиатр <strong>Бессел ван дер Колк</strong> в работе «Тело помнит всё» показал то, что перевернуло психологию: пережитое хранится не как воспоминание, которое можно «переубедить», а как <strong>телесная реакция</strong> — в дыхании, в сжатии мышц, в выбросе гормонов. Тело помнит и <strong>воспроизводит</strong> состояние само, без вашего разрешения, на автомате.</p>
-<p class="ref">— B. van der Kolk, «The Body Keeps the Score», 2014</p>
-
-<p>Советский нейрофизиолог <strong>Наталья Бехтерева</strong> называла это <strong>жёсткими звеньями</strong> — устойчивыми нейронными цепями, которые мозг прокручивает как заезженную пластинку. То же сжатие при виде крупной суммы. Тот же импульс спрятаться. Тот же сценарий, который заканчивается одинаково. Снова и снова, потому что когда-то это помогло выжить, и мозг записал это намертво.</p>
-
-<p>А теперь инсайт, который объясняет вашу финансовую историю целиком.</p>
-
-<!-- ФОТО [03] -->
-<div class="photo-block bw">
-  <img src="https://thebodymindcode.github.io/moneyprotocol/b6edd289933ace9240c8e1a0cb7d149d_08f0dd3f-58d5-48b7-850e-2aedff4405a8.jpg" alt="Рассекреченный график: значение всегда возвращается к линии «НОРМА» — точка отсчёта по деньгам" loading="lazy">
-  <div class="photo-caption">
-    <span>Гомеостаз · точка отсчёта по доходу · удержание нормы</span>
-    <span class="tag">архив</span>
+    <div class="duo" style="margin:30px 0 6px">
+      <div class="duo-col bad fade-in">
+        <div class="duo-tag">Пока корень не назван</div>
+        <h3>Гонка за суммой</h3>
+        <p>Деньги придут, а голод останется: он не про деньги. Безопасность обернётся страхом потерять. Признание растает за пару дней. И снова кажется, что нужно просто больше. <strong>Так уходят годы.</strong></p>
+      </div>
+      <div class="duo-col good fade-in d1">
+        <div class="duo-tag">Когда корень закрыт</div>
+        <h3>Хватка отпускает</h3>
+        <p>Найти то единственное, что стоит под вашими деньгами, и закрыть это там, где оно записано. Дыра закрыта, деньги перестают быть затычкой. <strong>И начинают приходить легче</strong>: они больше не нужны, чтобы выжить или что-то доказать.</p>
+      </div>
+    </div>
+    <p style="margin-top:16px">С этого «Протокол денег» и начинается. В первые же дни не бюджеты и не цели, а ваша личная причина: то, ради чего вы всю жизнь принимали деньги за решение. У многих именно тут впервые складывается вся их история отношений с деньгами. <span class="hl">Что стоит под вашими, вы увидите сами.</span></p>
+    <p style="margin-top:16px">То, что лежит под деньгами, не валяется на поверхности. В семьях с капиталом это знают и передают негромко, из поколения в поколение, как фамильную ценность. Большинство не добирается до этого за всю жизнь. Просто потому, что не знает, <strong>где искать</strong>.</p>
   </div>
-</div>
+</section>
 
-<p>У тела есть <strong>точка отсчёта по деньгам</strong>. Своя норма. И тело защищает её <strong>так же яростно, как защищает температуру 36,6</strong>. Поднимается температура, организм бросает все силы, чтобы её сбить. Поднимается доход выше привычной нормы, происходит ровно то же самое. Тело воспринимает «слишком много» как <strong>сбой</strong>. И запускает программу возврата к норме.</p>
-
-<div class="pullquote">Вот почему вы не теряете деньги.<br>Вы их <em>возвращаете</em>.</div>
-
-<p>Узнаёте?</p>
-
-<p>Пришла неожиданная крупная сумма, и почти сразу нашлось, куда её деть. Поломка. Налог. «Надо помочь». Срочная трата, которая «как нарочно» подвернулась именно сейчас. Был лучший месяц за год, а сразу за ним необъяснимо провальный. Будто что-то выровняло счёт. Сделка шла прекрасно и развалилась ровно в тот момент, когда почти получилась. Подняли доход, и расходы выросли ровно настолько же. Будто кто-то следит, чтобы в остатке всегда была одна и та же цифра.</p>
-
-<p>Это не «деньги уходят сквозь пальцы» и не невезение. Это тело, которое получило сумму выше своей нормы, почувствовало <strong>«это не моё, это опасно»</strong> и сделало всё, чтобы вернуть вас домой. На потолок. Так организм отторгает чужеродное, как отторгают пересаженный орган, который тело отказывается признать своим. Деньги выше вашей внутренней нормы тело отторгает <strong>точно так же</strong>.</p>
-
-<p>И заметьте, оно делает это <strong>вашими руками</strong>. Это вы совершаете ту самую трату. Это вы саботируете ту самую сделку. Вы. По собственной воле. С полной уверенностью, что поступаете разумно. Программа не борется с вами против вашей воли, она на эти 12 миллисекунд <strong>становится</strong> вашей волей.</p>
-
-<p>С этим невозможно справиться силой характера. Нельзя «перетерпеть» рефлекс, который тело запускает быстрее мысли и считает вопросом жизни и смерти. Можно сколько угодно убеждать себя «я достоин денег», тело знает свою норму и вернёт вас к ней. <span class="mark">Молча. Каждый раз.</span></p>
-
-<div class="pullquote">Вы не управляете своими деньгами. Ими управляет ваша физиология. А вы пока — только зритель, который аплодирует, думая, что это он на сцене.</div>
-
-<p>Но кто установил эту норму? Кто решил, что «ваше» — это именно столько, а не в десять раз больше? Это самое интересное. И самое неожиданное.</p>
-
-<!-- ═══ ЧАСТЬ III ═══ -->
-<div class="part-header"><span>Часть&nbsp;III</span><span class="classified">Classified</span></div>
-<h2 class="part-title">Ваш доход не может быть <span class="hl">больше&nbsp;вас</span></h2>
-
-<p>Вот ответ на вопрос «кто установил норму». И он переворачивает понимание денег полностью.</p>
-
-<p>Норму установила ваша <strong>личность</strong>. То, кем вы себя в глубине считаете.</p>
-
-<p>Мозг постоянно держит в фоне один-единственный ответ на вопрос «кто я и какого я масштаба». Этот образ себя он охраняет <strong>сильнее</strong>, чем деньги, чем отношения, чем что угодно ещё. Потому что для мозга образ себя — это карта реальности. Сотрётся карта, и непонятно, как вообще жить. Поэтому мозг защищает «кто я» любой ценой. В том числе ценой ваших денег.</p>
-
-<p>И вот механизм, о котором не говорят ни на одном курсе по финансам.</p>
-
-<p>Мозг не выносит <strong>разрыва</strong> между тем, «кто я», и тем, «что у меня». Когда реальность вдруг становится <strong>лучше</strong>, чем ваш внутренний образ себя, мозг чувствует не радость. Он чувствует <strong>тревогу</strong>. Несовпадение. «Это не я. Это не моя жизнь. Тут какая-то ошибка». И бросается эту ошибку исправлять.</p>
-
-<p>Внимание, вот поворот, ради которого написана эта часть. У мозга есть два способа убрать разрыв.</p>
-
-<p><strong>Первый:</strong> подтянуть образ себя до новой реальности. Поверить, что вы и правда человек таких денег. Это трудно, страшно и требует стать <strong>другим</strong>.</p>
-
-<p><strong>Второй:</strong> уронить реальность обратно, до привычного образа себя. Это легко, привычно и безопасно.</p>
-
-<p>И мозг почти всегда выбирает второй. Он <strong>уничтожит лишние деньги</strong>, лишь бы вы остались <strong>прежним</strong>. Потому что остаться собой для мозга важнее, чем стать богатым.</p>
-
-<p><strong>Перечитайте.</strong> Ваш мозг предпочитает, чтобы вы были <strong>стабильно бедным</strong>, а не <strong>непривычно богатым</strong>. Совпадение с собой ощущается безопаснее, чем успех. Это не красивая фраза, это установленный механизм. Психолог <strong>Уильям Сванн</strong> описал его как <strong>самоверификацию</strong>: человек бессознательно ищет и создаёт ситуации, подтверждающие его представление о себе, даже если это представление унизительное и болезненное. Оказаться <strong>правым</strong> про себя для психики важнее, чем оказаться <strong>счастливым</strong>. Даже когда правда звучит как «у меня никогда не бывает денег».</p>
-<p class="ref">— W. Swann, теория самоверификации (self-verification theory)</p>
-
-<p>Вот почему так знакомо это чувство. Когда приходит успех, внутри не ликование, а тихое «это не точно я», «сейчас раскроют», «просто повезло». Самозванец. Это не скромность. Это мозг сообщает: реальность превысила образ себя, готовь откат.</p>
-
-<p>Когда у вас всё пошло в гору, вы вдруг сами, необъяснимо, всё притормозили. Расслабились не вовремя. Поссорились с нужным человеком. «Забыли» сделать решающий шаг. Будто что-то не дало вам стать тем, кем вы себя не считаете.</p>
-
-<p>Когда знакомый резко разбогател, про него говорят «он изменился, стал не собой». Потому что большие деньги действительно требуют стать <strong>другим человеком</strong>. И большинство к этому не готовы, поэтому большинство и не богатеет, даже получив свой шанс. Вот почему выигравшие крупные суммы в лотерею в массе своей за пару лет возвращаются к прежнему уровню жизни. Деньги были. <strong>Личности под эти деньги не было.</strong> И личность победила. Она всегда побеждает, потому что <span class="mark">играет изнутри</span>.</p>
-
-<p>И вот самое тонкое. У каждого внутри есть <strong>роль</strong>, в которую он бессознательно себя записал, и доход покорно подстраивается под эту роль.</p>
-
-<!-- РОЛИ -->
-<div class="role-grid">
-  <div class="role-card"><div class="rc-tag">Роль 01</div><div class="rc-title">Тот, кто почти дотягивает</div><div class="rc-desc">Всегда рядом с прорывом, но никогда внутри него. Большие деньги маячат — и ускользают. Каждый раз.</div></div>
-  <div class="role-card"><div class="rc-tag">Роль 02</div><div class="rc-title">Помощник, которому брать стыдно</div><div class="rc-desc">«Я же помогаю людям, как я могу просить за это нормальные деньги». Доход держится на уровне, за который «не стыдно». То есть низком.</div></div>
-  <div class="role-card"><div class="rc-tag">Роль 03</div><div class="rc-title">Надёжный, но не богатый</div><div class="rc-desc">«На меня можно положиться, я честный и трудолюбивый, а богатство — для других, для пробивных, для не таких, как я».</div></div>
-  <div class="role-card"><div class="rc-tag">Роль 04</div><div class="rc-title">Обычный, кому «много не надо»</div><div class="rc-desc">«Не в деньгах счастье», «лишь бы на жизнь хватало». И хватает ровно на жизнь. Ни рублём больше. Мозг исполняет заказ буквально.</div></div>
-</div>
-
-<p>Найдите свою роль. Она звучит у вас в голове так привычно, что вы давно приняли её за правду о себе. А это всего лишь <strong>роль</strong>. Назначенная когда-то. Не вами выбранная. И именно она, а не рынок и не способности, определяет цифру на вашем счёте.</p>
-
-<div class="pullquote">У вас нет проблемы с деньгами. У вас есть образ себя, который проблемы с деньгами постоянно подтверждают.</div>
-
-<p>Ваш доход не может стать больше вас. Сначала больше становитесь вы. И тогда деньги просто подтягиваются следом, без борьбы.</p>
-
-<p>Осталось понять, почему всё, что вы пробовали раньше, не сделало вас «больше» ни на грамм. И почему это в принципе не могло сработать.</p>
-
-<!-- ═══ ЧАСТЬ IV ═══ -->
-<div class="part-header"><span>Часть&nbsp;IV</span><span class="classified">Top Secret</span></div>
-<h2 class="part-title">Почему вы чините <span class="hl">не&nbsp;тот&nbsp;этаж</span></h2>
-
-<p>Теперь сложим всё вместе, и станет видно, почему ни одна попытка не сработала. И почему не могла.</p>
-
-<p>Представьте, что у психики два этажа.</p>
-
-<!-- ДВА ЭТАЖА -->
-<div class="floors">
-  <div class="floor floor-top">
-    <div class="floor-tag">Верхний этаж · меняется легко и быстро</div>
-    <div class="floor-title">Программы</div>
-    <div class="floor-items">Решения · Цели · Мотивация · Знания · Стратегии</div>
-    <div class="floor-note">Сюда бьют книги, курсы, тренинги, мышление, разбор детства</div>
+<!-- ============ DARK QUOTE ============ -->
+<section class="sec bg-deep tight band">
+  <div class="wrap">
+    <div class="dquote fade-in">Мозг охраняет не деньги. Он охраняет то, <strong>что для него стоит&nbsp;за&nbsp;ними</strong>.</div>
+    <div class="dquote-sub fade-in d1">Исходная точка протокола</div>
   </div>
-  <div class="floor floor-bottom">
-    <div class="floor-tag">Нижний этаж · операционная система</div>
-    <div class="floor-title">То, что решает на самом деле</div>
-    <div class="floor-items">Рефлекс 12 мс · Норма по деньгам · Образ себя · Роль · Гормоны</div>
-    <div class="floor-note">Сюда не добралось ничего из того, что вы пробовали</div>
+</section>
+
+<!-- ============ FUEL ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>07 · Топливо</span><span class="tl"></span></div>
+    <h2 class="sec-h">Рост через борьбу и рост через&nbsp;<em>вознаграждение</em></h2>
+    <p class="sec-sub">Цели можно достигать двумя способами: через «рвать себя» и через дофамин, гормон достижения. <span class="hl">Это два разных биохимических режима</span>, и они дают разные&nbsp;деньги.</p>
+
+    <div class="fuel">
+      <div class="fuel-col cort fade-in">
+        <div class="fuel-tag">Кортизол · режим борьбы</div>
+        <h3>«Рвать себя»</h3>
+        <svg class="fuel-wave" viewBox="0 0 300 46" preserveAspectRatio="none" aria-hidden="true">
+          <path pathLength="1" d="M0,38 L30,12 L55,40 L85,8 L110,42 L145,14 L170,40 L205,10 L235,42 L265,16 L300,38" fill="none" stroke="#A83024" stroke-width="1.6" opacity=".75"/>
+        </svg>
+        <p>Заставлять себя каждый день означает жить на кортизоле. К тому, кто привык всё отвоёвывать, деньги тоже придут через борьбу, и удерживать их придётся в борьбе, до изнеможения. <strong>Деньги не меняют состояние. Они умножают то, что есть.</strong></p>
+      </div>
+      <div class="fuel-col dopa fade-in d1">
+        <div class="fuel-tag">Дофамин · контур вознаграждения</div>
+        <h3>Система сама хочет&nbsp;повторить</h3>
+        <svg class="fuel-wave" viewBox="0 0 300 46" preserveAspectRatio="none" aria-hidden="true">
+          <path pathLength="1" d="M0,40 C60,38 90,30 140,26 C200,21 250,14 300,8" fill="none" stroke="#1C5C44" stroke-width="1.6"/>
+          <circle cx="300" cy="8" r="3.4" fill="#2F9268"/>
+        </svg>
+        <p>Достигать не через «рвать себя», а через дофамин, гормон достижения цели. Действия в сторону денег начинают подкрепляться, а не караться: то, что сработало, хочется повторить. <strong>Протокол построен на этом режиме</strong>: 20 минут в день, которые тело начинает ждать.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<p>Так вот. Всё, что вам когда-либо продавали для роста дохода — книги, курсы, тренинги, мотивацию, мышление, даже разбор детства, — работает <strong>только с верхним этажом</strong>. С программами. Вам ставят новый софт. А он крутится поверх старой операционной системы, которую <strong>никто не трогал</strong>.</p>
+<!-- ============ CODE LOCK ============ -->
+<section class="sec bg-deep">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>08 · Механизм</span><span class="tl"></span></div>
+    <h2 class="sec-h">Четыре уровня. Как код к&nbsp;<em>сейфу</em></h2>
+    <p class="sec-sub">Поведение с деньгами держится сразу на нескольких слоях, и всё это сцеплено в один узел. Возьмёшься за один слой, и узел тут же затягивается обратно. Вот и вся разгадка, почему «работает у всех, кроме меня»: почти все всю жизнь работают <span class="hl">с одним уровнем за&nbsp;раз</span>.</p>
 
-<p>И каждое утро операционная система загружается заново и <strong>стирает</strong> всё, что вы накатили сверху.</p>
+    <div class="lock-seq">
+      <div class="lock-step fade-in">
+        <div class="ls-num">УРОВЕНЬ 01</div>
+        <div class="ls-dial">С</div>
+        <h3>Сознание</h3>
+        <p>То, что вы понимаете. Сюда бьют книги и курсы. И дальше этого уровня не проходят.</p>
+      </div>
+      <div class="lock-step fade-in d1">
+        <div class="ls-num">УРОВЕНЬ 02</div>
+        <div class="ls-dial">П</div>
+        <h3>Подсознание</h3>
+        <p>Записано глубже слов: норма, роль, прогноз. Сюда местами достаёт терапия, но не удерживается.</p>
+      </div>
+      <div class="lock-step fade-in d2">
+        <div class="ls-num">УРОВЕНЬ 03</div>
+        <div class="ls-dial">Т</div>
+        <h3>Тело</h3>
+        <p>Сжатие, телесная норма, рефлекс 12 мс. Сюда бьёт дыхание и практики состояния.</p>
+      </div>
+      <div class="lock-step fade-in d3">
+        <div class="ls-num">УРОВЕНЬ 04</div>
+        <div class="ls-dial">Г</div>
+        <h3>Гормоны</h3>
+        <p>Биохимия, которая держит: кортизол против дофамина. Их не переубедить словами.</p>
+      </div>
+    </div>
 
-<p>Узнаёте?</p>
+    <div class="lock-foot fade-in">
+      Тронете один уровень, и три остальных вернут вас на потолок за неделю. Поэтому случайные техники «из интернета» и не приживаются: они трогают что-то одно, наугад, не зная кода. Здесь узел распускается по порядку, слой за слоем, и <strong class="hl">каждый следующий держится на&nbsp;предыдущем</strong>. Как набирают код к сейфу: те же цифры в другой последовательности замок не откроют.
+    </div>
 
-<p>Вы прошли мощный курс, вышли с горящими глазами и планом на миллион. В понедельник — энергия. К среде — выдохлось. Через неделю вы там же, где были. Не потому что курс плохой. А потому что ночью система перезагрузилась и подняла старый код. Старую норму. Старого «вас».</p>
+    <div class="lock-foot fade-in" style="margin-top:26px">
+      Сначала с того, что мешает: внутренние ограничения и старые установки снимаются. И, вопреки ожиданиям, уходят они быстро и легко, когда точно знаешь, где они сидят. А на освободившееся место встаёт <strong class="hl">новое состояние и новый внутренний образ</strong> и закрепляется так, чтобы держаться&nbsp;само.
+    </div>
 
-<p>Вы поймали на терапии важное осознание: «вот откуда мой страх денег». Стало легче дышать. А цифра на счёте не сдвинулась. Потому что осознание село в <strong>голову</strong>. А программа живёт в <strong>теле</strong> и в <strong>образе себя</strong>, куда слова не достают.</p>
-
-<p>Вы тысячу раз решали «с понедельника всё иначе». И тысячу раз к среде всё было как всегда. Это не слабость воли. Это система, которая просто <strong>загрузилась по умолчанию</strong>. Как загружается всегда.</p>
-
-<div class="pullquote">Всё это время вы жали на педаль газа. Только машина стояла на нейтралке. А рычаг передачи — на нижнем этаже. Там, куда вы ни разу не заглянули.</div>
-
-<p>И вот ещё закон этого нижнего этажа, он добивает последнюю надежду на «вот заработаю и заживу».</p>
-
-<p><strong>Деньги не меняют ваше состояние. Они его обслуживают.</strong></p>
-
-<p>Деньги — это усилитель. Множитель. Они не превращают одно состояние в другое, они <strong>умножают то, что уже есть</strong>. Пришли деньги к тревожному человеку, стало больше тревоги: теперь есть что терять. Пришли деньги к тому, кто привык всё отвоёвывать через борьбу, деньги тоже придут через борьбу, и удерживать их придётся в борьбе, до изнеможения. Пришли деньги к тому, кто в глубине считает себя недостойным, и он подсознательно сделает всё, чтобы поскорее от этой «ошибки» избавиться.</p>
-
-<p>Вот почему «сначала деньги — потом спокойствие» не работает <strong>никогда</strong>. Всё наоборот. В каком состоянии вы находитесь в момент прихода денег, то состояние деньги и умножат. Деньги не печатают вам новую жизнь. Они снимают <strong>копию с той, что есть</strong>, и выдают её в большем размере.</p>
-
-<p>Есть и более глубокая причина, почему мозг держит вас в привычной бедности так упорно. <strong>Мозг — это машина предсказаний.</strong> Его главная задача — не сделать вам хорошо, а <strong>не ошибиться</strong>. Угадать, что будет, и подтвердить прогноз. Совпало предсказание с реальностью — система спокойна. Не совпало — тревога, сбой, опасность.</p>
-
-<p>И если ваш мозг годами предсказывает «денег не будет / деньги не удержатся», он будет <strong>подгонять реальность под этот прогноз</strong>. Потому что оказаться <strong>правым</strong> про свою бедность для него безопаснее, чем оказаться <strong>неправым</strong> и внезапно богатым. Ваш мозг скорее оставит вас без денег, лишь бы не пережить шок от того, что он ошибся.</p>
-
-<p>Звучит дико. Но именно поэтому так часто сбывается худшее: «я так и знал, что не получится». Вы не «накаркали». Ваш мозг <strong>выполнил собственный прогноз</strong> и испытал извращённое облегчение от того, что был прав.</p>
-
-<p>Теперь то, о чём вслух говорить не принято.</p>
-
-<!-- ФОТО [04] -->
-<div class="photo-block bw">
-  <img src="https://thebodymindcode.github.io/moneyprotocol/c6097366d36cb6e36bf06af4ae778fb0_b92c9262-a3b4-4666-9f1d-084ef6d718b7.jpg" alt="Рассекреченные документы на столе — работа с состоянием оператора" loading="lazy">
-  <div class="photo-caption">
-    <span>Программа Gateway · работа с состоянием нервной системы · declassified 2003</span>
-    <span class="tag">declassified</span>
+    <div class="lock-foot fade-in" style="margin-top:26px">
+      Само знание, на котором это построено, не разложено в свободном доступе списком полезных советов. Это про то, как мозг собирает свои шаблоны и как их можно пересобрать заново. Раньше до такого добирались единицы. Здесь оно превращено в понятный путь, <strong>по силам&nbsp;каждому</strong>.
+    </div>
   </div>
-</div>
+</section>
 
-<div class="data-panel">
-  <div class="label">&#9608; Закрытые программы</div>
-  <p>Люди, у которых цена ошибки — жизнь, поняли это давно: <strong>сначала меняешь состояние того, кто за штурвалом, потом — результат.</strong></p>
-  <p>Рассекреченные в 2003 году документы программы <strong>ЦРУ Gateway</strong> описывают системную работу именно с состояниями нервной системы, потому что в нужном состоянии у человека меняется всё: скорость и точность решений, доступ к интуиции, способность видеть то, что в тревоге невидимо. <strong>DARPA</strong> вкладывалось не в храбрость, а в управление <strong>внутренним состоянием</strong> оператора.</p>
-</div>
 
-<p>Это знание никогда не предназначалось для всех. Большинству продают «работай усердно» и «мысли позитивно», вечную возню с верхним этажом, которая никогда не доберётся до сути. А настоящий рычаг, перенастройка операционной системы, десятилетиями оставался либо под грифом, либо внутри узких кругов, где нужное состояние, нужный образ себя и нужную норму по деньгам передают по наследству вместе с капиталом. Дети из таких семей растут уже с <strong>другой операционной системой</strong>. Им не нужно «верить в себя», они просто не знают другого.</p>
+<!-- ============ PROGRAM ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>09 · Программа</span><span class="tl"></span></div>
+    <h2 class="sec-h">Из чего состоит&nbsp;<em>программа</em></h2>
+    <p class="sec-sub">Полную карту по дням мы не выкладываем, и это намеренно: когда знаешь каждый шаг заранее, включаются анализ и ожидания, а они в этой работе только мешают. <span class="hl">Поэтому лишь общее направление.</span></p>
 
-<div class="sidebar">
-  <div class="sidebar-title">&#9608; Почему этому не учат</div>
-  <p>Человек, перенастроивший свою денежную программу, <strong>перестаёт быть удобным</strong>. Он не покупает лишнее из тревоги. Не соглашается на мало из страха. Не сливает деньги, чтобы вернуться в привычное. Он видит и берёт. Такой человек выпадает из системы, которая на нём зарабатывала. Поэтому ему охотно показывают что угодно — мотивацию, тайм-менеджмент, «отработай возражения», — только не <strong>то, что выключает программу</strong>.</p>
-</div>
+    <div class="phase-card fade-in">
+      <div class="phase-side">
+        <div class="ph-num">01</div>
+        <div class="ph-level">Направление</div>
+      </div>
+      <div class="phase-main">
+        <h3>Уходит тревога</h3>
+        <p>Сначала с темы денег уходит тревога. Та самая, что годами включалась раньше вас и гасила любой рост как угрозу.</p>
+      </div>
+    </div>
+    <div class="phase-card fade-in">
+      <div class="phase-side">
+        <div class="ph-num">02</div>
+        <div class="ph-level">Направление</div>
+      </div>
+      <div class="phase-main">
+        <h3>Меняется состояние</h3>
+        <p>Дальше меняется состояние, из которого вы действуете. То, на котором одни и те же шаги одному приносят деньги, а другому нет.</p>
+      </div>
+    </div>
+    <div class="phase-card fade-in">
+      <div class="phase-side">
+        <div class="ph-num">03</div>
+        <div class="ph-level">Сердцевина</div>
+      </div>
+      <div class="phase-main">
+        <h3>Внутренний предел</h3>
+        <p>В сердцевине работа с вашим внутренним пределом: с невидимой отметкой, к которой всё возвращалось.</p>
+      </div>
+    </div>
+    <div class="phase-card fade-in">
+      <div class="phase-side">
+        <div class="ph-num">04</div>
+        <div class="ph-level">Направление</div>
+      </div>
+      <div class="phase-main">
+        <h3>Новый масштаб себя</h3>
+        <p>Затем новый масштаб себя. Тот, в котором большим деньгам наконец есть куда поместиться.</p>
+      </div>
+    </div>
+    <div class="phase-card fade-in">
+      <div class="phase-side">
+        <div class="ph-num">05</div>
+        <div class="ph-level">Направление</div>
+      </div>
+      <div class="phase-main">
+        <h3>Два источника денег</h3>
+        <p>И отдельно два источника, из которых к человеку вообще приходят деньги: то, что вы берёте сами, и то, что приходит через других людей. Почти у каждого один из них перекрыт, и человек даже не догадывается, какой именно. <strong>Когда открываются оба, меняется всё.</strong></p>
+      </div>
+    </div>
+    <div class="phase-card fade-in">
+      <div class="phase-side">
+        <div class="ph-num">06</div>
+        <div class="ph-level">Финал</div>
+      </div>
+      <div class="phase-main">
+        <h3>Закрепление</h3>
+        <p>В финале новая настройка закрепляется так, чтобы держаться сама, без «поддержания мотивации».</p>
+      </div>
+    </div>
 
-<p>Сделайте честный вывод. Всё это время вы поднимали мощность двигателя, который не подключён к колёсам. <span class="mark">Жали на газ на нейтралке.</span> Дело не в том, сколько сил вы вложили, дело в том, что вы вкладывали их в этаж, который ничего не решает. А каждый, кто продавал вам очередную «прокачку», либо сам не знал про нижний этаж, либо очень не хотел, чтобы про него узнали вы.</p>
-
-<!-- ═══ ЧАСТЬ V ═══ -->
-<div class="part-header"><span>Часть&nbsp;V</span><span class="classified">Declassified</span></div>
-<h2 class="part-title">Где живёт&nbsp;<span class="hl">ключ</span></h2>
-
-<p>Вся ваша денежная программа записана на этаже, где <strong>нет слов</strong>.</p>
-
-<p>Рефлекс, который срабатывает за 12 миллисекунд. Телесная норма, которую тело защищает, как температуру. Образ себя и роль, в которую вы записаны. Прогноз, который мозг выполняет. Ничего из этого <strong>не сделано из слов</strong>. Поэтому слова туда и не проходят.</p>
-
-<p>И вот теперь окончательно ясно, почему не сработало вообще ничего из того, что вы пробовали. Всё, что вы пробовали, было <strong>из слов</strong>. Книги — слова. Лекции — слова. Цели и аффирмации — слова. Разговор с психологом — тоже слова. Вы пытались словами достучаться до этажа, на котором слов не существует. Это всё равно что объяснять голос по факсу. Канал не тот.</p>
-
-<p>Чтобы перенастроить нижний этаж, нужно говорить на <strong>его</strong> языке. А его язык — это <strong>состояние, образ и повторение</strong>. Ровно то, на чём мозг учился всему с самого начала, ещё до того, как вы узнали своё первое слово.</p>
-
-<!-- ФОТО [05] -->
-<div class="photo-block bw">
-  <img src="https://thebodymindcode.github.io/moneyprotocol/9b81c201a023f8c715b02637dce73a94_e7e6b37c-ab29-4f6c-9f7d-b97ba93890fe.jpg" alt="Открытый банковский сейф с пачками денег — верный код открывает доступ" loading="lazy">
-  <div class="photo-caption">
-    <span>Нейропластичность · перенастройка по принципу Хебба · код к сейфу</span>
-    <span class="tag">архив</span>
+    <div class="prog-note fade-in">Каждый шаг опирается на предыдущий, поэтому только по порядку.</div>
   </div>
-</div>
+</section>
 
-<p>И это возможно, потому что мозг <strong>пластичен</strong> всю жизнь. Канадский нейробиолог <strong>Дональд Хебб</strong> сформулировал принцип, на котором стоит вся современная нейронаука: <strong>нейроны, которые активируются вместе, связываются вместе.</strong> Старые связи без подкрепления слабеют. Новые выстраиваются, если их целенаправленно активировать. Это и есть нейропрограммирование: не уговаривать мозг словами, а <strong>показывать</strong> ему новое состояние, снова и снова, пока новое не станет тем, что грузится по умолчанию. Пока новая норма по деньгам не станет вашей нормой. Пока новый образ себя не станет просто <strong>вами</strong>.</p>
-<p class="ref">— D. Hebb, принцип нейропластичности, 1949</p>
+<!-- ============ DAY FORMAT ============ -->
+<section class="sec bg-soft">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>10 · Формат</span><span class="tl"></span></div>
+    <h2 class="sec-h">Как устроен один&nbsp;<em>день</em></h2>
+    <p class="sec-sub">Двадцать минут в день. Вот и весь вход. <span class="hl">Чем легче формат, тем выше шанс дойти до конца</span>, и программу собирали именно из этого расчёта: никаких вебинаров по два часа и тетрадей на сорок&nbsp;страниц.</p>
 
-<p>И вот почему это нельзя сделать наполовину. Программа держится <strong>сразу на четырёх уровнях</strong>, и пока вы трогаете один, остальные три возвращают всё назад.</p>
+    <div class="day-steps">
+      <div class="dstep fade-in" data-step="Шаг 1">
+        <div class="ds-time">Утро</div>
+        <h3>Урок дня</h3>
+        <p>Каждый день в закрытом канале открывается новый урок. Слушать можно за кофе, в дороге, в наушниках перед сном.</p>
+      </div>
+      <div class="dstep fade-in d1" data-step="Шаг 2">
+        <div class="ds-time">5–10 минут</div>
+        <h3>Практика</h3>
+        <p>В отдельные дни к уроку добавляется короткая практика: мягкая, ничего изматывающего. Делать, а не только понимать.</p>
+      </div>
+      <div class="dstep fade-in d2" data-step="Шаг 3">
+        <div class="ds-time">Задание</div>
+        <h3>Закрепление</h3>
+        <p>Короткое задание переносит практику в реальные деньги: цены, решения, действия. Здесь программа встречается с жизнью.</p>
+      </div>
+      <div class="dstep fade-in d3" data-step="Шаг 4">
+        <div class="ds-time">В своём темпе</div>
+        <h3>Без чувства&nbsp;вины</h3>
+        <p>Пропустили день? Ничего не сгорает. Доступ остаётся навсегда, наверстать можно спокойно, в своём темпе. Вина тоже из старой программы.</p>
+      </div>
+    </div>
 
-<!-- ЧЕТЫРЕ УРОВНЯ -->
-<div class="info-grid four">
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><circle cx="16" cy="13" r="7"/><path d="M9 28c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
-    <div class="info-cell-label">Сознание</div>
-    <div class="info-cell-val">что вы понимаете. Сюда бьют книги и курсы</div>
+    <div class="day-total fade-in"><span>Весь вход</span><b>20 минут в день</b><span>Это короче, чем лента перед сном</span></div>
+    <p class="prog-note fade-in" style="margin-top:34px;max-width:680px;margin-left:auto;margin-right:auto">Но лёгкость тут обманчива. За спокойными двадцатью минутами идёт точная, выверенная работа. Та, что меняет глубже, чем любые волевые рывки и большие планы. Перенастройка идёт сама, шаг за шагом, пока в какой-то момент вы не обнаружите, что реагируете на деньги уже иначе, чем привыкли за всю жизнь.</p>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><path d="M5 11l11-6 11 6-11 6z"/><path d="M5 16l11 6 11-6M5 21l11 6 11-6"/></svg>
-    <div class="info-cell-label">Подсознание</div>
-    <div class="info-cell-val">записано глубже слов. Сюда местами достаёт терапия</div>
+</section>
+
+<!-- ============ INCLUDES ============ -->
+<section class="sec bg-deep">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>11 · Что внутри</span><span class="tl"></span></div>
+    <h2 class="sec-h">Что вы&nbsp;<em>получаете</em></h2>
+    <p class="sec-sub">Всё открывается в закрытом Telegram-канале потока день за днём, начиная с 17&nbsp;июня.</p>
+
+    <div class="inc-grid">
+      <div class="inc-card fade-in">
+        <div class="ic-mark">01</div>
+        <h3>17 ежедневных&nbsp;уроков</h3>
+        <p>Аудио и видео. Коротко, по делу, без воды. Каждый урок ведёт к практике, а не заменяет её.</p>
+      </div>
+      <div class="inc-card fade-in d1">
+        <div class="ic-mark">02</div>
+        <h3>Задания дня</h3>
+        <p>Конкретные действия на 5–10 минут, которые переносят перенастройку в реальные денежные решения.</p>
+      </div>
+      <div class="inc-card fade-in">
+        <div class="ic-mark">03</div>
+        <h3>PDF-мануалы и трекер</h3>
+        <p>Ежедневные PDF и трекер к урокам. В финале общий мануал протокола, чтобы возвращаться и после 17&nbsp;дней.</p>
+      </div>
+      <div class="inc-card fade-in d1">
+        <div class="ic-mark">04</div>
+        <h3>Закрытый Telegram-канал</h3>
+        <p>Поток идёт вместе: вы видите, что вы не одни в этой работе. Всё в одном месте, ничего не теряется.</p>
+      </div>
+    </div>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><circle cx="16" cy="7" r="3"/><path d="M16 10v10M16 13l-6 3M16 13l6 3M16 20l-4 7M16 20l4 7"/></svg>
-    <div class="info-cell-label">Тело</div>
-    <div class="info-cell-val">сжатие, норма, рефлекс 12 мс. Сюда бьёт дыхание</div>
+</section>
+
+
+<!-- ============ WHY IT MATTERS ============ -->
+<section class="sec bg-paper">
+  <div class="wrap-n">
+    <div class="tag-line"><span class="tl"></span><span>12 · Ради чего</span><span class="tl"></span></div>
+    <h2 class="sec-h">Ради чего всё&nbsp;<em>это</em></h2>
+    <p style="font-size:1.05rem;text-align:center;line-height:1.75;max-width:640px;margin:0 auto">Большинство живёт по одной формуле: сначала заработать, а пожить когда-нибудь потом. Здесь всё в обратную сторону. <span class="hl">Сначала возвращается то состояние, ради которого деньги и были нужны:</span></p>
+
+    <div class="mean-wrap fade-in" style="margin-top:28px">
+      <span class="mean">Спокойствие</span>
+      <span class="mean">Лёгкость</span>
+      <span class="mean hot">«Со мной всё в порядке»</span>
+    </div>
+
+    <p style="font-size:1.05rem;text-align:center;line-height:1.75;max-width:640px;margin:26px auto 0">Из него по-другому работается, по-другому называется цена, по-другому принимаются решения. А деньги подтягиваются следом, как награда за игру, в которую снова стало интересно играть. Не цель, на которой сжимаешься. <strong style="color:var(--ink)">Следствие.</strong></p>
+
+    <div class="recog-after fade-in" style="margin-top:38px">Лёгкость можно себе позволить. Парадокс в том, что это навык. <span class="hl">И он&nbsp;тренируется.</span></div>
   </div>
-  <div class="info-cell">
-    <svg viewBox="0 0 32 32"><circle cx="11" cy="12" r="4"/><circle cx="21" cy="20" r="4"/><path d="M14 15l4 2"/></svg>
-    <div class="info-cell-label">Гормоны</div>
-    <div class="info-cell-val">биохимия, которая держит. Их не переубедить словами</div>
+</section>
+
+<!-- ============ FIT ============ -->
+<section class="sec bg-soft">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>13 · Кому</span><span class="tl"></span></div>
+    <h2 class="sec-h">Кому подойдёт. И кому&nbsp;<em>нет</em></h2>
+    <p class="sec-sub">Протокол не «для всех». Честная разметка сэкономит время и вам, и&nbsp;нам.</p>
+
+    <div class="fit-grid">
+      <div class="fit-col yes fade-in">
+        <div class="f-title">Заходите, если</div>
+        <ul>
+          <li>Вы узнали себя: предел, качели, заниженная цена, тревога, которая не отпускает, даже когда деньги есть</li>
+          <li>Вы уже прошли курсы, книги, терапию, а отметка не сдвинулась</li>
+          <li>Вы готовы давать программе 20 минут в день в течение 17 дней</li>
+          <li>Вам нужна механика, а не мотивация. Перенастройка, а не вдохновение</li>
+        </ul>
+      </div>
+      <div class="fit-col no fade-in d1">
+        <div class="f-title">Не подойдёт, если</div>
+        <ul>
+          <li>Вы ждёте, что всё случится само, без вашего участия. Слушать и делать всё-таки придётся</li>
+          <li>Вы ищете гарантированную сумму к конкретному числу. Её честно не назовёт никто, кто работает всерьёз</li>
+          <li>Вам сейчас по-настоящему тяжело и нужна помощь врача или психотерапевта: это к ним, программа их не заменяет</li>
+        </ul>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<p>Тронете один уровень, три остальных вернут вас на потолок за неделю. Вот и вся разгадка, почему «работает у всех, кроме меня»: вы, как и почти все, всю жизнь работали с <strong>одним</strong> уровнем за раз. А сдвигается только то, что меняют на <strong>всех четырёх сразу</strong> и в правильном порядке.</p>
+<!-- ============ COST OF INACTION ============ -->
+<section class="sec bg-deep tight band">
+  <div class="wrap">
+    <div class="cost-line fade-in">
+      <p>Каждый день, пока всё остаётся как есть, привычная отметка становится <strong>только прочнее</strong>. Просто потому, что повторяется.</p>
 
-<div class="pullquote">Как набирают код к сейфу. Те же цифры в другой последовательности — и замок не откроется, сколько ни дёргай ручку.</div>
+    <div class="ceil-anim fade-in" aria-hidden="true">
+      <svg viewBox="0 0 340 52" width="100%" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="34" cy="13" r="3.4" fill="#8FE6BB"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.06;0.08;0.92;1" dur="6s" repeatCount="indefinite"/></circle>
+        <circle cx="79" cy="13" r="3.4" fill="#8FE6BB"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.165;0.185;0.92;1" dur="6s" repeatCount="indefinite"/></circle>
+        <circle cx="124" cy="13" r="3.4" fill="#8FE6BB"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.27;0.29;0.92;1" dur="6s" repeatCount="indefinite"/></circle>
+        <circle cx="169" cy="13" r="3.4" fill="#8FE6BB"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.375;0.395;0.92;1" dur="6s" repeatCount="indefinite"/></circle>
+        <circle cx="214" cy="13" r="3.4" fill="#8FE6BB"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.48;0.5;0.92;1" dur="6s" repeatCount="indefinite"/></circle>
+        <circle cx="259" cy="13" r="3.4" fill="#8FE6BB"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.585;0.605;0.92;1" dur="6s" repeatCount="indefinite"/></circle>
+        <circle cx="304" cy="13" r="3.4" fill="#8FE6BB"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.69;0.71;0.92;1" dur="6s" repeatCount="indefinite"/></circle>
+        <line x1="16" y1="38" x2="324" y2="38" stroke="#D98A7E" stroke-linecap="round">
+          <animate attributeName="stroke-width" values="1.2;4.8;4.8;1.2" keyTimes="0;0.82;0.92;1" dur="6s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values=".55;.95;.95;.55" keyTimes="0;0.82;0.92;1" dur="6s" repeatCount="indefinite"/>
+        </line>
+      </svg>
+    </div>
 
-<p>Когда код набран и точка отсчёта наконец сдвигается, меняется не «настроение». Меняется <strong>то, из чего вы живёте</strong>. И это ни на что не похоже.</p>
-
-<p>Впервые вы смотрите на крупную сумму, и внутри <strong>тихо</strong>. Не «вы научились терпеть тревогу». Тревоги просто <strong>нет</strong>, потому что мозг больше не читает деньги как угрозу. Решения о деньгах впервые приходят из ясности, а не из сжатия.</p>
-
-<p>Вы называете свою цену и не слышите внутри тот голос, что заставлял её занизить. Голос исчез. Не «вы его перекричали», его больше <strong>нет</strong>.</p>
-
-<p>Деньги перестают то приходить, то исчезать, потому что внутри больше нет того, кто их возвращал. Качели останавливаются сами, без героических усилий. Просто прекращается то, что годами их раскачивало.</p>
-
-<p>Вы вдруг видите возможности там, где раньше был пустой коридор. Они и раньше там были, их не видел тревожный мозг. Спокойный видит. То, что со стороны выглядит как «ему просто везёт», изнутри ощущается как «я наконец-то вижу».</p>
-
-<p>И самое странное: вам больше не нужно <strong>заставлять</strong> себя зарабатывать больше. Это перестаёт быть борьбой. Деньги переходят из разряда поля боя в то, чем были всегда, в <strong>инструмент</strong>. Не больше и не меньше.</p>
-
-<p>Те, кто этот рычаг нашли и переключили, живут иначе. Не потому что умнее или удачливее. А потому что перестали быть марионетками собственной программы. И обратно уже не возвращаются, потому что нельзя развидеть то, что увидел, и невозможно снова стать тем, кем перестал быть.</p>
-
-<!-- СЕЙЧАС / ПОСЛЕ -->
-<div class="versus">
-  <div class="vs-col vs-before">
-    <div class="vs-tag">Сейчас</div>
-    <ul>
-      <li>Большие деньги — внутри сжатие и тревога</li>
-      <li>Называете цену и тут же занижаете</li>
-      <li>Деньги приходят и утекают, одни качели</li>
-      <li>Успех ощущается как «сейчас раскроют»</li>
-      <li>Зарабатывать больше — борьба через силу</li>
-    </ul>
+      <p>Это не упрёк, а физиология: связи укрепляются от повторения. Чем дольше программа работает без вмешательства, тем прочнее потолок и тем дольше его потом сдвигать.</p>
+      <div class="cl-em">Вопрос не в том, «нужно ли мне это». Вопрос в том, сколько ещё лет вы готовы прожить под потолком, который поставили не вы и который <strong>без вас не&nbsp;снимется</strong>.</div>
+    </div>
   </div>
-  <div class="vs-col vs-after">
-    <div class="vs-tag">Когда код набран</div>
-    <ul>
-      <li>Большие деньги — внутри тихо</li>
-      <li>Называете цену и не занижаете</li>
-      <li>Качели останавливаются сами</li>
-      <li>Видите возможности там, где был тупик</li>
-      <li>Деньги — спокойный инструмент, не борьба</li>
-    </ul>
+</section>
+
+<!-- ============ AUTHOR ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>14 · Кто ведёт</span><span class="tl"></span></div>
+    <h2 class="sec-h">Дарья <em>Ростовцева</em></h2>
+    <p class="sec-sub">Сооснователь проекта «Архитектура&nbsp;сознания»</p>
+
+    <div class="author-card fade-in">
+      <div class="author-photo">
+        <img src="https://thebodymindcode.github.io/session1/daria.jpg" alt="Дарья Ростовцева">
+      </div>
+      <div class="author-body">
+        <div class="a-name">Дарья Ростовцева</div>
+        <div class="a-role">Сооснователь «Архитектуры сознания»</div>
+        <p>Практик на стыке нейробиологии и работы с подсознанием. Автор «Протокола остановки&nbsp;ума».</p>
+        <p>Без эзотерики и без «просто поверьте в себя». Только то, что можно проверить на собственной нервной системе и почувствовать&nbsp;разницу.</p>
+        <div class="author-stats">
+          <div class="a-stat"><div class="as-num">2000+</div><div class="as-label">участников программ</div></div>
+          <div class="a-stat"><div class="as-num">10+</div><div class="as-label">лет практики</div></div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
-<!-- ═══ ЧЕКЛИСТ ═══ -->
-<div class="part-header"><span>Проверьте себя</span><span class="classified">Self-assessment</span></div>
-
-<div class="checklist" id="selfCheck">
-  <div class="checklist-title">Экспресс-диагностика денежной программы</div>
-  <div class="checklist-intro">Отметьте, что про вас.</div>
-  <label><input type="checkbox" onchange="updateChecklist()"> Я знаю сумму, на которой мой доход стоит годами, и он к ней возвращается</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> Деньги появляются и почти сразу куда-то деваются</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> Когда дела идут в гору, я почему-то сам(а) всё притормаживаю</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> При мысли о крупных деньгах внутри тревога или «это не точно я», а не радость</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> Занижаю цену, стесняюсь назвать, сколько стою, боюсь «отпугнуть»</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> Когда приходит успех, появляется чувство самозванца, «сейчас раскроют»</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> Брать деньги за то, что я делаю, бывает стыдно или неловко</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> Лучший месяц у меня нередко сменяется провальным, будто что-то выравнивает счёт</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> «Мне много не надо», «не в деньгах счастье» — мои частые мысли</label>
-  <label><input type="checkbox" onchange="updateChecklist()"> Сколько бы я ни зарабатывал(а), ощущение «мало» и «небезопасно» не уходит</label>
-  <div class="checklist-result" id="result2"><strong>2+ совпадения</strong> — денежная программа активна и тихо управляет вашим доходом.</div>
-  <div class="checklist-result" id="result4"><strong>4+ совпадения</strong> — нервная система удерживает вас под потолком. Деньги, возможности и годы теряются прямо сейчас.</div>
-  <div class="checklist-result" id="result6"><strong>6+ совпадений</strong> — вы читаете это вовремя.</div>
-</div>
-
-<!-- ═══ ЧТО ДАЛЬШЕ ═══ -->
-<div class="sep"><div class="sep-icon"></div></div>
-
-<h2>Что дальше</h2>
-
-<p>Вы только что узнали о своих деньгах больше, чем дают десять курсов по финансам вместе взятых. Потому что курсы рассказывают, что <strong>делать</strong>. А вы теперь знаете, <strong>кто</strong> годами не давал тому, что вы делаете, сработать. Этого знания нет в открытом доступе, его не показывают, потому что на этом неудобно зарабатывать.</p>
-
-<p>Но знание — это ещё не сдвиг. Вы помните главное правило этой статьи: до нижнего этажа <strong>не достучаться словами</strong>. Можно идеально понять свою программу и остаться ровно под тем же потолком. Понять мало. Программу нужно <strong>переписать</strong> — на её языке, на всех четырёх уровнях, в правильной последовательности. Тот самый код к сейфу.</p>
-
-</div><!-- .content -->
-
-<!-- ФОТО — продукт [06] (цвет) -->
-<div class="photo-block color">
-  <img src="https://thebodymindcode.github.io/moneyprotocol/d56fe961372ea0e5d19e864edea6e8f5_dc4c4f4d-b044-44b1-9fb4-8edbd3ff6819.jpg" alt="Деловой стол с ноутбуком и положительным балансом — деньги как спокойный инструмент" loading="lazy">
-</div>
-
-<!-- ═══ ПРОДУКТ / ДОСТУП (заглушка названия/ссылки) ═══ -->
-<div class="product-block">
-  <div class="product-eyebrow">Доступ · Рассекречено</div>
-  <h2>Протокол денег</h2>
-  <div class="product-sub">17 дней · ежедневные уроки · перенастройка операционной системы</div>
-
-  <p>Этот код существует. Его собрали в одну точную систему — <strong>ключ</strong>, который добирается до этажа, куда не достаёт ни одна книга, ни один коуч, ни одна терапия, и сдвигает саму точку отсчёта. Не верхний софт. Операционную систему. То, что годами держало ваш потолок.</p>
-
-  <p>17 дней работы на языке нижнего этажа — <strong>состояние, образ и повторение</strong>. Не на одном уровне, а на всех четырёх сразу и в правильной последовательности. Тот самый набранный код.</p>
-
-  <div class="product-note">Что именно внутри, как он устроен и почему срабатывает там, где не сработало остальное, — по ту сторону кнопки. Это не для всех. Это для тех, кто дочитал до этого места. И узнал себя.</div>
-
-  <p class="product-emph"><strong>Те, кто проходят это, обратно уже не возвращаются. Потому что нельзя развидеть то, что увидел.</strong></p>
-
-  <div class="cta-wrap">
-    <a href="https://thebodymindcode.github.io/moneyaccess/" target="_blank" rel="noopener" class="cta-btn">Получить доступ →</a>
+<!-- ============ TESTIMONIALS (выключено до получения реальных отзывов) ============
+<section class="sec bg-soft">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>Отзывы</span><span class="tl"></span></div>
+    <h2 class="sec-h">Что говорят&nbsp;участники</h2>
+    [TODO: вставить 3–6 реальных отзывов со скриншотов — имя, возраст/город, конкретика без обещаний результатов]
   </div>
-</div>
+</section>
+============ -->
 
-<div class="content">
 
-<!-- ФИНАЛЬНАЯ СТРОКА -->
-<div class="final-line">
-  <p>Каждый день, пока программа не переписана, мозг укрепляет старые связи. Не строит новые, укрепляет старые. Делает ваш потолок ещё прочнее. И это не нейтральное ожидание: это ежедневный выбор в пользу того, кем вы уже перестали хотеть быть.</p>
-  <p style="margin-top:12px">Деньги не уходят сквозь пальцы. Их <strong>удерживает</strong> тот, <span class="mark">кого вы только что увидели внутри себя</span>.</p>
-  <p style="margin-top:12px"><strong>Вопрос уже не в том, «нужно ли мне это». Вопрос в другом: сколько ещё лет вы готовы прожить под потолком, который поставили не вы и который без вас не снимется.</strong></p>
-</div>
+<!-- ============ ACCESS / TARIFFS ============ -->
+<section class="sec bg-deep" id="access">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>Доступ</span><span class="tl"></span></div>
+    <h2 class="sec-h">Войти в&nbsp;<em>протокол</em></h2>
+    <p class="sec-sub">Поток стартует 17 июня, в среду. Уроки открываются день за днём в закрытом Telegram-канале. Кто входит позже, начинает&nbsp;позже.</p>
 
-<div class="cta-wrap">
-  <a href="https://thebodymindcode.github.io/moneyaccess/" target="_blank" rel="noopener" class="cta-btn cta-btn-large">Получить доступ →</a>
-  <span class="cta-btn-sub">17 дней · перенастройка денежной программы</span>
-</div>
+    <div class="start-strip fade-in"><span class="ss-dot"></span><span>Старт потока: <b>17 июня</b></span><span>·</span><span>17 дней · Telegram · доступ навсегда</span></div>
 
-</div><!-- .content -->
+    <div class="tariffs">
+      <div class="tariff fade-in">
+        <div class="t-name">Тариф · Доступ</div>
+        <div class="t-price">3 500 <span>₽</span></div>
+        <div class="t-sub">Самостоятельное прохождение</div>
+        <ul>
+          <li><strong>17 дней программы</strong>: ежедневные уроки в аудио и видео</li>
+          <li>Ежедневные задания по ходу программы</li>
+          <li><strong>PDF-мануалы и трекер</strong> к урокам</li>
+          <li>Закрытый Telegram-канал потока</li>
+          <li>Доступ к материалам навсегда</li>
+        </ul>
+        <!-- TODO: заменить href на ссылку payform тарифа «Доступ» -->
+        <a href="#" target="_blank" rel="noopener" class="cta-btn">Войти →</a>
+      </div>
 
-<div class="footer">
-  <p>Архитектура сознания · @thebodymindcode · Дарья Ростовцева</p>
-</div>
+      <div class="tariff featured fade-in d1">
+        <div class="t-badge">Рекомендуем</div>
+        <div class="t-name">Тариф · Полный доступ</div>
+        <div class="t-price">9 900 <span>₽</span></div>
+        <div class="t-sub">Протокол + живые разборы</div>
+        <ul>
+          <li><strong>Всё из тарифа «Доступ»</strong></li>
+          <li><strong>Раз в неделю живой разбор с Дарьей:</strong> ваша ситуация и ваша настройка лично</li>
+          <li>Ответы на ваши вопросы по ходу программы напрямую</li>
+          <li>Точная подстройка практик под то, что стоит за деньгами именно у вас</li>
+        </ul>
+        <!-- TODO: заменить href на ссылку payform тарифа «Полный доступ» -->
+        <a href="#" target="_blank" rel="noopener" class="cta-btn mint">Войти с разборами →</a>
+      </div>
+    </div>
 
-</div><!-- .page -->
+    <div class="other-paths fade-in">
+      После оплаты на указанный email придёт ссылка на закрытый канал.<br>
+      Если письма нет, проверьте папку «Спам». Если и там пусто, <a href="https://t.me/TheBodyMindCode_support" target="_blank" rel="noopener">напишите в поддержку</a>, ответим быстро.
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ FAQ ============ -->
+<section class="sec bg-soft">
+  <div class="wrap-m">
+    <div class="tag-line"><span class="tl"></span><span>15 · Вопросы</span><span class="tl"></span></div>
+    <h2 class="sec-h">Всё, что обычно&nbsp;<em>спрашивают</em></h2>
+    <p class="sec-sub">Не нашли свой вопрос? Напишите в поддержку, отвечаем&nbsp;быстро.</p>
+
+    <div class="faq-wrap">
+      <div class="faq-item">
+        <button class="faq-q">Когда старт и как всё проходит?</button>
+        <div class="faq-a"><p>Поток стартует 17 июня. После оплаты вы получаете ссылку на закрытый Telegram-канал. Там с 17 июня в течение 17 дней день за днём открываются уроки, практики и задания. При оплате обязательно укажите email: ссылка придёт на почту. Если письма нет, проверьте папку «Спам».</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Сколько времени нужно в день?</button>
+        <div class="faq-a"><p>Около 20 минут на урок, плюс короткая практика в те дни, когда она есть. Без домашних работ на вечер и тетрадей на сорок страниц.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Я не успеваю проходить день в день. Всё пропало?</button>
+        <div class="faq-a"><p>Нет. Материалы остаются в канале, доступ навсегда. Догоняете в своём темпе. Важно одно: фазы проходятся по порядку, как набирается код.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Чем это отличается от «Биохимии денег»?</button>
+        <div class="faq-a"><p>«Биохимия денег» объясняет за три часа, как устроен механизм. «Протокол денег» перенастраивает его 17 дней. Одно объясняет, другое меняет. Если вы проходили «Биохимию», протокол ляжет на подготовленную почву. Но проходить её заранее не обязательно.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Нужна ли подготовка или опыт практик?</button>
+        <div class="faq-a"><p>Нет. Понадобятся наушники, 20 минут в день и готовность делать, а не только слушать.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Я в найме, не предприниматель. Мне подойдёт?</button>
+        <div class="faq-a"><p>Да. Программа работает с тем, как вы внутри устроены по отношению к деньгам, а это есть у всех. Меняются только декорации: цена за услугу, разговор о повышении, масштаб проектов.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Это живой поток или записи?</button>
+        <div class="faq-a"><p>Уроки записаны заранее и открываются по расписанию потока. На тарифе «Полный доступ» к ним добавляются живые еженедельные разборы с Дарьей в реальном времени.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Вы обещаете рост дохода?</button>
+        <div class="faq-a"><p>Нет. Обещать конкретные суммы к конкретной дате недобросовестно, и мы этого не делаем. Протокол работает с тем, что в зоне вашего влияния: с реакцией нервной системы на деньги, с внутренней нормой и образом себя. Что из этого вырастет, зависит и от вас, и от ваших действий после.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL ============ -->
+<section class="sec bg-deep band">
+  <div class="wrap">
+    <div class="tag-line"><span class="tl"></span><span>Последнее</span><span class="tl"></span></div>
+    <div class="final-line fade-in">Если прочитанное отозвалось, приходите. <strong>Стартуем 17 июня, в среду</strong>, и дальше идём вместе: по двадцать минут в&nbsp;день.</div>
+    <div class="center fade-in d1">
+      <a href="#access" class="cta-btn mint">Получить доступ →</a>
+      <div class="cta-note">Старт потока: 17 июня</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="f-brand"><i>✦</i> Архитектура сознания</div>
+  <div>Telegram: <a href="https://t.me/thebodymindcode" target="_blank" rel="noopener">@thebodymindcode</a> · Поддержка: <a href="https://t.me/TheBodyMindCode_support" target="_blank" rel="noopener">@TheBodyMindCode_support</a></div>
+  <div style="margin-top:6px">Ещё не читали статью «Кто решает, сколько у вас денег»? <a href="https://thebodymindcode.github.io/moneyprotocol/" target="_blank" rel="noopener">Прочитать статью →</a></div>
+  <div class="f-legal">
+    © 2026. Все права защищены. ИП Ростовцева Дарья Валерьевна · ИНН: 241103415641<br>
+    Программа не является медицинской или психологической услугой и не заменяет консультацию специалиста. Результаты участия индивидуальны.
+  </div>
+</footer>
 
 <script>
-function updateChecklist(){
-  var c=document.querySelectorAll('#selfCheck input[type="checkbox"]:checked').length;
-  document.getElementById('result2').className='checklist-result'+(c>=2?' show':'');
-  document.getElementById('result4').className='checklist-result'+(c>=4?' show':'');
-  document.getElementById('result6').className='checklist-result'+(c>=6?' show':'');
-}
-</script>
+// nav scroll
+var nav = document.getElementById('nav');
+window.addEventListener('scroll', function(){
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+}, {passive:true});
 
+// reveal on scroll
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+  });
+},{threshold:.18});
+document.querySelectorAll('.fade-in, .tl-bar').forEach(function(el){ io.observe(el); });
+
+// counters
+var counted = false;
+var cio = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){
+    if(e.isIntersecting && !counted){
+      counted = true;
+      document.querySelectorAll('.stat-num').forEach(function(el){
+        var target = parseInt(el.getAttribute('data-count'),10);
+        var sup = el.querySelector('sup');
+        var start = null;
+        function step(ts){
+          if(!start) start = ts;
+          var p = Math.min((ts-start)/1100, 1);
+          var eased = 1 - Math.pow(1-p, 3);
+          el.firstChild.nodeValue = Math.round(target*eased);
+          if(p < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+      cio.disconnect();
+    }
+  });
+},{threshold:.4});
+var strip = document.querySelector('.stat-strip');
+if(strip) cio.observe(strip);
+
+// faq
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click', function(){
+    var item = q.parentElement;
+    var open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(i){ i.classList.remove('open'); });
+    if(!open) item.classList.add('open');
+  });
+});
+</script>
 </body>
 </html>
